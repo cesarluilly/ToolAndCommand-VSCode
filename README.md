@@ -60,6 +60,64 @@
 |:---:|:---:|:---:|
 | 1 | Window+Espacidora | Cambiar idioma de teclado |
 
+## Snippets
+Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
+##### Javascript
+```
+"mostrar log": {
+    "prefix": "clg",
+    "body": [
+        "console.log(${1:\"Hola mundo\"});",
+        "$2"
+    ],
+    "description": "Mostrar el log en la o consulta"
+},
+"comments": {
+    "prefix": "//",
+    "body": [
+        "//  //$1"
+    ],
+    "description": "comments"
+}
+```
+##### Typescript
+```
+"mostrar log": {
+    "prefix": "clg",
+    "body": [
+        "console.log(${1:'Hola mundo'});",
+        "$2"
+    ],
+    "description": "Mostrar el log"
+},
+"mostrar clase": {
+    "prefix": "clase",
+    "body": [
+        "export class ${1:SuperHeroe} {",
+        " ",
+        "\tconstructor() {",
+        "\t//\tholamundo$2",
+        "\t}",
+        "}"
+    ],
+    "description": "Mostrar clase"
+},
+"mostrar todo": {
+    "prefix": "todo",
+    "body": [
+        "// TODO: ",
+    ],
+    "description": "Mostrar Todo"
+},
+"mostrar fixme": {
+    "prefix": "fixme",
+    "body": [
+        "// FIXME: ",
+    ],
+    "description": "Mostrar fixme"
+}
+```
+
 ## Temas preferidos
 * Monokai
 
