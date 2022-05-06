@@ -18,9 +18,48 @@
 ## Extensiones para testing
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
-## Comandos para codificar mas rapido
+## Comandos para codificar mas rapido en VSCode
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
+| 1 | Ctrl+k Ctrl+o | Abrir nueva carpeta para trabajar |
+| 2 | Alt + ↓/↑ | Mover lineas de codigo |
+| 3 | Ctrl+b | Visualiza/Ocultar barra lateral de VSCode |
+| 4 | Ctrl+k Ctrl+c | Comentar |
+| 5 | Ctrl+k Ctrl+u | Descomentar |
+| 6 | Shift+Alt+a | Comentar un area seleccionada |
+| 7 | F12 | Ir a la definicion de la clase |
+| 8 | Alt+F12 | Mostrar pequeña ventana de definicion de la clase |
+| 9 | Ctrl+Shift+L | Poner cursores en todas las coincidencias |
+| 10 | Ctrl+Shift+k | Borrar linea actual |
+| 11 | Ctrl+z | Revertir cambios |
+| 12 | Ctrl+Shift+z | Recuperar los ultimos cambios revertidos |
+| 13 | Ctrl+y | Recuperar los ultimos cambios revertidos |
+| 14 | Ctrl+k  z | Modo Zen(Sin distracciones) |
+| 15 | Ctrl+p | Buscar archivos |
+| 16 | Ctrl+ñ | Abrir Consola |
+| 17 | Ctrl+Shift+ñ | Abrir nueva terminal |
+| 18 | Ctrl+Shift+p "wrapt" | Encerrar un texto en etiqueta personalizada |
+| 19 | Ctrl+w | Cerrar tab |
+| 20 | Ctrl+k Ctrl+w | Cerrar todos los tabs |
+| 21 | Ctrl+Shift+t | Reabrir el ultimo tab cerrado |
+| 22 | Ctrl+tab | Cambiar de tab |
+| 23 | Alt+z | Acortar el ancho de texto de VSCode para que aparescan en multilinea |
+| 24 | Shift+Alt+↓/↑ | Duplicar linea |
+| 25 | Ctrl+Alt+↓/↑ | Crear multicursores |
+| 26 | Ctrl+Shift+p | Mostrar paleta de comandos |
+| 27 | F1 | Mostrar paleta de comandos |
+| 28 | Ctrl+d | Buscar siguiente ocurrencia |
+| 29 | Ctrl+Shift+p Ctrl+Shift+o | Busca todas las propiedades y metodos de la clase |
+| 30 | Ctrl+Shift+p Ctrl+Shift+o : | Agrupamos todas las propiedades y metodos de la clase |
+| 31 | Ctrl+g | Ir a una linea determinada de codigo |
+| 32 | F2 | Replace/Renombrar | Hay que tener mucho cuidado y ver que es lo que hace y como afecta a otros archivos. **Nota**: Los archivos que se ven modificados por ese renombramiento, se abren en automatico en VSCode para despues verificar esos cambios | 
+| 33 | Ctrl+Alt+→ | Dividir pantalla en 2 o mas vistas |
+
+## Comandos de SO Window
 | # | Comando | Descripcion |
 |:---:|:---:|:---:|
-| 1 | Ctrl + k Ctrl + o | Abrir nueva carpeta para trabajar |
-| 2 | Alt + ↓/↑ | Mover lineas de codigo |
+| 1 | Window+Espacidora | Cambiar idioma de teclado |
+
+## Temas preferidos
+* Monokai
 
