@@ -16,4 +16,4 @@
 * [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
 
 ## Extensiones para testing
-* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
+* [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
