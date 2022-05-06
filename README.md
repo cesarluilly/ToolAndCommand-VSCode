@@ -62,7 +62,7 @@
 
 ## Snippets
 Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
-##### Javascript
+### Javascript
 ```
 "mostrar log": {
     "prefix": "clg",
@@ -80,7 +80,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     "description": "comments"
 }
 ```
-##### Typescript
+### Typescript
 ```
 "mostrar log": {
     "prefix": "clg",
