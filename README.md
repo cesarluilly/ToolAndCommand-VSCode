@@ -17,3 +17,10 @@
 
 ## Extensiones para testing
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
+
+## Comandos para codificar mas rapido
+| # | Comando | Descripcion |
+|:---:|:---:|:---:|
+| 1 | Ctrl + k Ctrl + o | Abrir nueva carpeta para trabajar |
+| 2 | Alt + ↓/↑ | Mover lineas de codigo |
+
