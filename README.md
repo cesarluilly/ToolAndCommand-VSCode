@@ -46,6 +46,7 @@
 | 23 | Alt+z | Acortar el ancho de texto de VSCode para que aparescan en multilinea |
 | 24 | Shift+Alt+↓/↑ | Duplicar linea |
 | 25 | Ctrl+Alt+↓/↑ | Crear multicursores |
+| 25 | Ctrl+u | Deshacer cursor |
 | 26 | Ctrl+Shift+p | Mostrar paleta de comandos |
 | 27 | F1 | Mostrar paleta de comandos |
 | 28 | Ctrl+d | Buscar siguiente ocurrencia |
