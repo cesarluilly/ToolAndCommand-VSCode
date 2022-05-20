@@ -55,6 +55,14 @@
 | 31 | Ctrl+g | Ir a una linea determinada de codigo |
 | 32 | F2 | Replace/Renombrar | Hay que tener mucho cuidado y ver que es lo que hace y como afecta a otros archivos. **Nota**: Los archivos que se ven modificados por ese renombramiento, se abren en automatico en VSCode para despues verificar esos cambios | 
 | 33 | Ctrl+Alt+→ | Dividir pantalla en 2 o mas vistas |
+| 33 | Ctrl+A | Seleccionar todo el contenido del documento |
+| 33 | Ctrl+L | Seleccionar linea actual |
+| 33 | Ctrl+Shift+Enter | Agregar nueva linea en la posicion actual |
+| 33 | Ctrl + Home / End | Ir al inicio o final de un archivo |
+| 33 | Shift+Alt+A | Comentar o descomentar bloque |
+| 33 | Ctrl + K Ctrl + ← / →  ò Ctrl + numero | Moverse entre pestañas |
+
+Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
 ## Comandos de SO Window
 | # | Comando | Descripcion |
