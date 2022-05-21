@@ -26,8 +26,8 @@
 | 1 | Ctrl+K Ctrl+O | Abrir nueva instancia para trabajar |
 | 26 | Ctrl+Shift+P | Mostrar paleta de comandos |
 | 33 | Ctrl+Shift+N | Nueva instancia de VSCode |
-| 19 | Ctrl+W | Cerrar Ventana |
 | 19 | Ctrl+N | Nueva pestaña |
+| 19 | Ctrl+W | Cerrar Ventana |
 | 3 | Ctrl+B | Visualiza/Ocultar Sidebar de VSCode |
 | 16 | Ctrl+Ñ | Abrir Terminal |
 | 17 | Ctrl+Shift+Ñ | Abrir nueva terminal |
@@ -60,9 +60,9 @@
 |:---:|:---:|:---:|:---:|
 | 2 | Alt + ↓/↑ | Mover linea de codigo |
 | 2 | Shift + Alt + ↓/↑ | Copiar linea de codigo|
-| 10 | Ctrl+Shift+k | Borrar linea linea de codigo |
 | 33 | Ctrl+Enter | Agregar nueva linea abajo |
 | 33 | Ctrl+Shift+Enter | Agregar nueva linea arriba |
+| 10 | Ctrl+Shift+K | Borrar linea linea de codigo |
 | 33 | Ctrl+Shift+\ | Navegar al cierre actual |
 | 33 | Ctrl + Home / End | Ir al inicio o final de un archivo |
 | 4 | Ctrl+K Ctrl+C | Comentar |
@@ -101,9 +101,8 @@
 | 33 | Ctrl+T | Buscar entre los metodos de toda la solucion |
 | 33 | Ctrl+Shift+. | Ver todos los metodos de un archivo |
 | 33 | Ctrl+F | Buscar en el documento actual |
-| 33 | F3 ò Shift+F3 | Siguiente/Anterior busqueda |
+| 33 | F3 ò Shift+F3 ó Enter ó Shift+Enter | Siguiente/Anterior busqueda |
 | 33 | Alt+Enter | Poner cursor en todas las ocurrencias de la busqueda |
-| 33 | Ctrl+P | Explorador de archivos |
 | 33 | Ctrl+Shift+M | Ver panel de problemas |
 
 ### Manejo de archivos
