@@ -19,23 +19,38 @@
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
 ## Comandos para codificar mas rapido en VSCode
+### Relacionados a lineas de codigo
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 1 | Ctrl+k Ctrl+o | Abrir nueva carpeta para trabajar |
 | 2 | Alt + ↓/↑ | Mover linea de codigo |
 | 2 | Alt + Shift + ↓/↑ | Copiar linea de codigo|
-| 10 | Ctrl+Shift+k | Borrar linea linea de codigo |
 | 33 | Ctrl+Shift+Enter | Agregar nueva linea arriba |
 | 33 | Ctrl+Enter | Agregar nueva linea abajo |
-| 3 | Ctrl+b | Visualiza/Ocultar barra lateral de VSCode |
+| 10 | Ctrl+Shift+k | Borrar linea linea de codigo |
 | 4 | Ctrl+k Ctrl+c | Comentar |
 | 5 | Ctrl+k Ctrl+u | Descomentar |
 | 6 | Shift+Alt+a | Comentar un area seleccionada |
+
+### Relacionados las herramientas de VSCode
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
+| 1 | Ctrl+k Ctrl+o | Abrir nueva carpeta para trabajar |
+| 3 | Ctrl+b | Visualiza/Ocultar barra lateral de VSCode |
+| 11 | Ctrl+z | Revertir cambios |
+| 12 | Ctrl+Shift+z | Recuperar los ultimos cambios revertidos |
+
+### Relacionados Multicursores
+| # | Comando | Descripcion | Comentario |
+
+### Relacionados consulta de archivos o informacion
+| # | Comando | Descripcion | Comentario |
+
+## Comandos para codificar mas rapido en VSCode
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
 | 7 | F12 | Ir a la definicion de la clase |
 | 8 | Alt+F12 | Mostrar pequeña ventana de definicion de la clase |
 | 9 | Ctrl+Shift+L | Poner cursores en todas las coincidencias |
-| 11 | Ctrl+z | Revertir cambios |
-| 12 | Ctrl+Shift+z | Recuperar los ultimos cambios revertidos |
 | 13 | Ctrl+y | Recuperar los ultimos cambios revertidos |
 | 14 | Ctrl+k  z | Modo Zen(Sin distracciones) |
 | 15 | Ctrl+p | Buscar archivos |
