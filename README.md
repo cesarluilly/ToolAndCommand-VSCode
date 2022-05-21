@@ -24,7 +24,7 @@
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
 | 1 | Ctrl+K Ctrl+O | Abrir nueva instancia para trabajar |
-| 2 | Ctrl+Shift+P | Mostrar paleta de comandos |
+| 2 | Ctrl+Shift+P ó F1 | Mostrar paleta de comandos |
 | 3 | Ctrl+Shift+N | Nueva instancia de VSCode |
 | 4 | Ctrl+N | Nueva pestaña |
 | 5 | Ctrl+W | Cerrar Ventana |
@@ -32,12 +32,11 @@
 | 7 | Ctrl+Ñ | Abrir Terminal |
 | 8 | Ctrl+Shift+Ñ | Abrir nueva terminal |
 | 9 | Alt+Z | Acortar el ancho de texto de VSCode para que aparescan en multilinea |
-| 10 | Ctrl+Shift+P ó F1 | Paleta de comandos |
-| 11 | Ctrl+Shift+V | Markdown preview |
-| 12 | Ctrl + K V | Markdown preview (a lado) |
-| 13 | Ctrl + K Ctrl + S | Ver atajos de teclado |
-| 14 | Ctrl + , | Configuracion del editor |
-| 15 | Abrir paleta comandos y Teclear "Folder" | Collapsar todos las carpetas |
+| 10 | Ctrl+Shift+V | Markdown preview |
+| 11 | Ctrl + K V | Markdown preview (a lado) |
+| 12 | Ctrl + K Ctrl + S | Ver atajos de teclado |
+| 13 | Ctrl + , | Configuracion del editor |
+| 14 | Abrir paleta comandos y Teclear "Folder" | Collapsar todos las carpetas |
 
 ### Relacionados Multicursores
 | # | Comando | Descripcion | Comentario |
@@ -70,6 +69,7 @@
 | 9 | Ctrl+K Ctrl+U | Descomentar |
 | 10 | Shift+Alt+A | Comentar o descomentar bloque de codigo |
 | 11 | Ctrl+. | Ver diferentes tips que da VSCode |
+| 12 | Ctrl + ↓/↑ | Desplazar el archivo hacia arriba o abajo |
 
 ### Manejo del editor y Edicion
 | # | Comando | Descripcion | Comentario |
