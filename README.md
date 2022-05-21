@@ -24,100 +24,100 @@
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
 | 1 | Ctrl+K Ctrl+O | Abrir nueva instancia para trabajar |
-| 26 | Ctrl+Shift+P | Mostrar paleta de comandos |
-| 33 | Ctrl+Shift+N | Nueva instancia de VSCode |
-| 19 | Ctrl+N | Nueva pestaña |
-| 19 | Ctrl+W | Cerrar Ventana |
-| 3 | Ctrl+B | Visualiza/Ocultar Sidebar de VSCode |
-| 16 | Ctrl+Ñ | Abrir Terminal |
-| 17 | Ctrl+Shift+Ñ | Abrir nueva terminal |
-| 23 | Alt+Z | Acortar el ancho de texto de VSCode para que aparescan en multilinea |
-| 33 | Ctrl+Shift+P ó F1 | Paleta de comandos |
-| 34 | Ctrl+Shift+V | Markdown preview |
-| 34 | Ctrl + K V | Markdown preview (a lado) |
-| 34 | Ctrl + K Ctrl + S | Ver atajos de teclado |
-| 34 | Ctrl + , | Configuracion del editor |
+| 2 | Ctrl+Shift+P | Mostrar paleta de comandos |
+| 3 | Ctrl+Shift+N | Nueva instancia de VSCode |
+| 4 | Ctrl+N | Nueva pestaña |
+| 5 | Ctrl+W | Cerrar Ventana |
+| 6 | Ctrl+B | Visualiza/Ocultar Sidebar de VSCode |
+| 7 | Ctrl+Ñ | Abrir Terminal |
+| 8 | Ctrl+Shift+Ñ | Abrir nueva terminal |
+| 9 | Alt+Z | Acortar el ancho de texto de VSCode para que aparescan en multilinea |
+| 10 | Ctrl+Shift+P ó F1 | Paleta de comandos |
+| 11 | Ctrl+Shift+V | Markdown preview |
+| 12 | Ctrl + K V | Markdown preview (a lado) |
+| 13 | Ctrl + K Ctrl + S | Ver atajos de teclado |
+| 14 | Ctrl + , | Configuracion del editor |
+| 15 | Abrir paleta comandos y Teclear "Folder" | Collapsar todos las carpetas |
 
 ### Relacionados Multicursores
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 25 | Alt+Click | Insertar cursor |
-| 25 | Ctrl+Alt+↓/↑ | Insertar cursor arriba o abajo |
-| 25 | Ctrl+U | Deshacer cursor |
-| 9 | Ctrl+Shift+L | Poner cursores en todas las coincidencias |
-| 28 | Ctrl+D | Buscar siguiente ocurrencia y poner cursor |
-| 33 | Shift+Alt+Arrastrar | Seleccion de columnas y poner cursores|
+| 1 | Alt+Click | Insertar cursor |
+| 2 | Ctrl+Alt+↓/↑ | Insertar cursor arriba o abajo |
+| 3 | Ctrl+U | Deshacer cursor |
+| 4 | Ctrl+Shift+L | Poner cursores en todas las coincidencias |
+| 5 | Ctrl+D | Buscar siguiente ocurrencia y poner cursor |
+| 6 | Shift+Alt+Arrastrar | Seleccion de columnas y poner cursores|
 
 ### Seleccion
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 33 | Ctrl+A | Seleccionar todo el texto |
-| 33 | Ctrl+L | Seleccionar linea actual |
-| 33 | Shift+Alt+ ← / → | Expandir o reducir seleccion |
+| 1 | Ctrl+A | Seleccionar todo el texto |
+| 2 | Ctrl+L | Seleccionar linea actual |
+| 3 | Shift+Alt+ ← / → | Expandir o reducir seleccion |
 
 ### Manejo del codigo
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 2 | Alt + ↓/↑ | Mover linea de codigo |
+| 1 | Alt + ↓/↑ | Mover linea de codigo |
 | 2 | Shift + Alt + ↓/↑ | Copiar linea de codigo|
-| 33 | Ctrl+Enter | Agregar nueva linea abajo |
-| 33 | Ctrl+Shift+Enter | Agregar nueva linea arriba |
-| 10 | Ctrl+Shift+K | Borrar linea linea de codigo |
-| 33 | Ctrl+Shift+\ | Navegar al cierre actual |
-| 33 | Ctrl + Home / End | Ir al inicio o final de un archivo |
-| 4 | Ctrl+K Ctrl+C | Comentar |
-| 5 | Ctrl+K Ctrl+U | Descomentar |
-| 33 | Shift+Alt+A | Comentar o descomentar bloque de codigo |
-| 33 | Ctrl+. | Ver diferentes tips que da VSCode |
+| 3 | Ctrl+Enter | Agregar nueva linea abajo |
+| 4 | Ctrl+Shift+Enter | Agregar nueva linea arriba |
+| 5 | Ctrl+Shift+K | Borrar linea linea de codigo |
+| 6 | Ctrl+Shift+\ | Navegar al cierre actual |
+| 7 | Ctrl + Home / End | Ir al inicio o final de un archivo |
+| 8 | Ctrl+K Ctrl+C | Comentar |
+| 9 | Ctrl+K Ctrl+U | Descomentar |
+| 10 | Shift+Alt+A | Comentar o descomentar bloque de codigo |
+| 11 | Ctrl+. | Ver diferentes tips que da VSCode |
 
 ### Manejo del editor y Edicion
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 33 | Ctrl+Alt+→ | Dividir pantalla en 2 o mas vistas |
-| 33 | Ctrl+1, 2, 3 | Moverse entre los grupos de pantalla |
-| 33 | Shift+Alt+0 | Cambiar la orientacion de las pantallas |
-| 33 | F11 | Pantalla completa |
-| 33 | Ctrl+Shift+E | Mostrar el explorador de archivos del sidebar |
-| 33 | Ctrl+Shift+F | Mostrar el buscador del sidebar para buscar en todo la solucion |
-| 33 | Ctrl+Shift+D | Mostrar Debug |
-| 33 | Ctrl+Shift+X | Mostrar Extensiones |
-| 14 | Ctrl+K  Z | Modo Zen(Sin distracciones) |
-| 33 | Ctrl+H | Reemplazar |
-| 33 | Tab ó Shift + Tab | Identar codigo |
-| 11 | Ctrl+Z | Revertir cambios |
-| 12 | Ctrl+Shift+Z ò Ctrl+Y | Recuperar los ultimos cambios revertidos |
-| 32 | F2 | Replace/Renombrar | Hay que tener mucho cuidado y ver que es lo que hace y como afecta a otros archivos. **Nota**: Los archivos que se ven modificados por ese renombramiento, se abren en automatico en VSCode para despues verificar esos cambios | 
-| 18 | Ctrl+Shift+P "wrapt" | Encerrar un texto en etiqueta personalizada |
+| 1 | Ctrl+Alt+→ | Dividir pantalla en 2 o mas vistas |
+| 2 | Ctrl+1, 2, 3 | Moverse entre los grupos de pantalla |
+| 3 | Shift+Alt+0 | Cambiar la orientacion de las pantallas |
+| 4 | F11 | Pantalla completa |
+| 5 | Ctrl+Shift+E | Mostrar el explorador de archivos del sidebar |
+| 6 | Ctrl+Shift+F | Mostrar el buscador del sidebar para buscar en todo la solucion |
+| 7 | Ctrl+Shift+D | Mostrar Debug |
+| 8 | Ctrl+Shift+X | Mostrar Extensiones |
+| 9 | Ctrl+K  Z | Modo Zen(Sin distracciones) |
+| 10 | Ctrl+H | Reemplazar |
+| 11 | Tab ó Shift + Tab | Identar codigo |
+| 12 | Ctrl+Z | Revertir cambios |
+| 13 | Ctrl+Shift+Z ò Ctrl+Y | Recuperar los ultimos cambios revertidos |
+| 14 | F2 | Replace/Renombrar | Hay que tener mucho cuidado y ver que es lo que hace y como afecta a otros archivos. **Nota**: Los archivos que se ven modificados por es15 renombramiento, se abren en automatico en VSCode para despues verificar esos cambios | 
+| 16 | Ctrl+Shift+P "wrapt" | Encerrar un texto en etiqueta personalizada |
 
 ### Relacionados consulta de archivos o informacion
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 31 | Ctrl+G | Ir a una linea determinada de codigo |
-| 7 | F12 | Ir a la definicion de la clase |
-| 8 | Alt+F12 | Mostrar pequeña ventana de definicion de la clase |
-| 15 | Ctrl+P | Buscar archivos |
-| 29 | Ctrl+Shift+O | Busca todas las propiedades y metodos de la clase |
-| 30 | Ctrl+Shift+O : | Agrupamos todas las propiedades y metodos de la clase |
-| 33 | Ctrl+T | Buscar entre los metodos de toda la solucion |
-| 33 | Ctrl+Shift+. | Ver todos los metodos de un archivo |
-| 33 | Ctrl+F | Buscar en el documento actual |
-| 33 | F3 ò Shift+F3 ó Enter ó Shift+Enter | Siguiente/Anterior busqueda |
-| 33 | Alt+Enter | Poner cursor en todas las ocurrencias de la busqueda |
-| 33 | Ctrl+Shift+M | Ver panel de problemas |
+| 1 | Ctrl+G | Ir a una linea determinada de codigo |
+| 2 | F12 | Ir a la definicion de la clase |
+| 3 | Alt+F12 | Mostrar pequeña ventana de definicion de la clase |
+| 4 | Ctrl+P | Buscar archivos |
+| 5 | Ctrl+Shift+O | Busca todas las propiedades y metodos de la clase |
+| 6 | Ctrl+Shift+O : | Agrupamos todas las propiedades y metodos de la clase |
+| 7 | Ctrl+T | Buscar entre los metodos de toda la solucion |
+| 8 | Ctrl+Shift+. | Ver todos los metodos de un archivo |
+| 9 | Ctrl+F | Buscar en el documento actual |
+| 10 | F3 ò Shift+F3 ó Enter ó Shift+Enter | Siguiente/Anterior busqueda |
+| 11 | Alt+Enter | Poner cursor en todas las ocurrencias de la busqueda |
+| 12 | Ctrl+Shift+M | Ver panel de problemas |
 
 ### Manejo de archivos
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 33 | Ctrl+O | Abrir archivo |
-| 33 | Ctrl+K S | Guardar todo|
-| 20 | Ctrl+K Ctrl+W | Cerrar todos los tabs |
-| 21 | Ctrl+Shift+T | Reabrir la ultima pestaña cerrada |
-| 22 | Ctrl+Tab ó Ctrl+Shift+Tab| Cambiar de tab |
-| 33 | Ctrl+K Ctrl+ ← / →  ò Ctrl + numero | Moverse entre pestañas |
-| 22 | Ctrl+K P| Copiar ruta actual |
-| 22 | Ctrl+K R| Abrir el archivo actual en el finder o explorator |
-| 22 | Ctrl+K O| Abrir archivo actual en una nueva ventana o instancia |
-
+| 1 | Ctrl+O | Abrir archivo |
+| 2 | Ctrl+K S | Guardar todo|
+| 3 | Ctrl+K Ctrl+W | Cerrar todos los tabs |
+| 4 | Ctrl+Shift+T | Reabrir la ultima pestaña cerrada |
+| 5 | Ctrl+Tab ó Ctrl+Shift+Tab| Cambiar de tab |
+| 6 | Ctrl+K Ctrl+ ← / →  ò Ctrl + numero | Moverse entre pestañas |
+| 7 | Ctrl+K P| Copiar ruta actual |
+| 8 | Ctrl+K R| Abrir el archivo actual en el finder o explorator |
+| 9 | Ctrl+K O| Abrir archivo actual en una nueva ventana o instancia |
 
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
