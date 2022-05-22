@@ -134,7 +134,7 @@
 ### Comandos personalizados
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
-| 1 | Ctrl+Shift+Ñ | "command": "workbench.action.toggleMaximizedPanel" |
+| 1 | Ctrl+Shift+Ñ | Maximizar y minimizar la consola de comandos | "command": "workbench.action.toggleMaximizedPanel" |
 
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
