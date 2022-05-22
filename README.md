@@ -29,7 +29,10 @@
 | 4 | Ctrl+N | Nueva pestaña |
 | 5 | Ctrl+W | Cerrar Ventana |
 | 6 | Ctrl+B | Visualiza/Ocultar Sidebar de VSCode |
-| 7 | Ctrl+Ñ | Abrir Terminal |
+| 7 | Ctrl+Shift+Y | Abrir consola de Debug |
+| 12 | Ctrl+Shift+M | Abrir consola de problemas |
+| 12 | Ctrl+Shift+U | Abrir consola de Output |
+| 7 | Ctrl+Ñ | Abrir consola de Terminal |
 | 8 | Ctrl+Shift+Ñ | Abrir nueva terminal |
 | 9 | Alt+Z | Acortar el ancho de texto de VSCode para que aparescan en multilinea |
 | 10 | Ctrl+Shift+V | Markdown preview |
@@ -104,7 +107,6 @@
 | 9 | Ctrl+F | Buscar en el documento actual |
 | 10 | F3 ò Shift+F3 ó Enter ó Shift+Enter | Siguiente/Anterior busqueda |
 | 11 | Alt+Enter | Poner cursor en todas las ocurrencias de la busqueda |
-| 12 | Ctrl+Shift+M | Ver panel de problemas |
 
 ### Manejo de archivos
 | # | Comando | Descripcion | Comentario |
@@ -129,7 +131,6 @@
 | 5 | Shift+F11| Step Out |
 | 6 | Ctrl+Shift+F5| Restart |
 | 7 | Shift+F5| Stop |
-
 
 ### Comandos personalizados
 | # | Comando | Descripcion | Comentario |
