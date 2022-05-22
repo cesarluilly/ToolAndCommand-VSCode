@@ -123,12 +123,18 @@
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
 | 1 | F9 | Poner Breakpoint |
-| 1 | F5 | Continue / Pause |
-| 1 | F10 | Step Over |
-| 1 | F11| Step Into |
-| 1 | Shift+F11| Step Out |
-| 1 | Ctrl+Shift+F5| Restart |
-| 1 | Shift+F5| Stop |
+| 2 | F5 | Continue / Pause |
+| 3 | F10 | Step Over |
+| 4 | F11| Step Into |
+| 5 | Shift+F11| Step Out |
+| 6 | Ctrl+Shift+F5| Restart |
+| 7 | Shift+F5| Stop |
+
+
+### Comandos personalizados
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
+| 1 | Ctrl+Shift+Ñ | "command": "workbench.action.toggleMaximizedPanel" |
 
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
