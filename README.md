@@ -184,6 +184,42 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 }
 ```
 
+### TW
+```
+"tw line class": {
+    "prefix": "twLineClass",
+    "body": [
+        "//==================================================================================================================",
+        "$2"
+    ],
+    "description": "standart"
+},
+"tw line method": {
+    "prefix": "twLineMethod",
+    "body": [
+        "//--------------------------------------------------------------------------------------------------------------",
+        "$2"
+    ],
+    "description": "standart"
+},
+"tw line support method": {
+    "prefix": "twLineSupportMethod",
+    "body": [
+        "//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
+        "$2"
+    ],
+    "description": "standart"
+},
+"tw status info ": {
+    "prefix": "twStatusInfo",
+    "body": [
+        "intStatus_IO = $1;",
+        "strUserMessage_IO = \"$2\";",
+        "strDevMessage_IO = \"$3\";"
+    ],
+    "description": "standart"
+},
+```
 ## Temas preferidos
 * Monokai
 
