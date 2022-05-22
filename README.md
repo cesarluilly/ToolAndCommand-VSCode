@@ -119,6 +119,17 @@
 | 8 | Ctrl+K R| Abrir el archivo actual en el finder o explorator |
 | 9 | Ctrl+K O| Abrir archivo actual en una nueva ventana o instancia |
 
+### Debugging
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
+| 1 | F9 | Poner Breakpoint |
+| 1 | F5 | Continue / Pause |
+| 1 | F10 | Step Over |
+| 1 | F11| Step Into |
+| 1 | Shift+F11| Step Out |
+| 1 | Ctrl+Shift+F5| Restart |
+| 1 | Shift+F5| Stop |
+
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
 ## Comandos de SO Window
