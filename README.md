@@ -238,30 +238,46 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     "description": "standart"
 },
 "tw if": {
-		"prefix": "iftw",
-		"body": [
-			"if (",
-            "\t//$2",
-            "\t${1:true}",
-			"\t)",
-			"{",
-			"\t$0",
-			"\t",
-			"}"
-		],
-		"description": "standart"
-	},
-	"tw foreach": {
-		"prefix": "foreachtw",
-		"body": [
-			"//  $5//Take each ${4:${2:item}}",
-            "foreach (${1:var} ${2:item} in ${3:collection})",
-            "{",
-			"\t$0",
-			"}"
-		],
-		"description": "standart"
-	},
+    "prefix": "iftw",
+    "body": [
+        "if (",
+        "\t//$2",
+        "\t${1:true}",
+        "\t)",
+        "{",
+        "\t$0",
+        "\t",
+        "}"
+    ],
+    "description": "standart"
+},
+"tw foreach": {
+    "prefix": "foreachtw",
+    "body": [
+        "//  $5//Take each ${4:${2:item}}",
+        "foreach (${1:var} ${2:item} in ${3:collection})",
+        "{",
+        "\t$0",
+        "}"
+    ],
+    "description": "standart"
+},
+"tw repeat while": {
+    "prefix": "whiletw",
+    "body": [
+        "int ${1:intI} = 0;",
+        "/*REPEAT-WHILE*/",
+        "while (",
+        "\t//$3",
+        "\t${1:intI} < ${2:collection}",
+        "\t)",
+        "{",
+        "\t$0",
+        "\t${1:intI} = ${1:intI} + 1;",
+        "}"
+    ],
+    "description": "standart"
+},
 ```
 ## Temas preferidos
 * Monokai
