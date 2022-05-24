@@ -246,7 +246,6 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "\t)",
         "{",
         "\t$0",
-        "\t",
         "}"
     ],
     "description": "standart"
