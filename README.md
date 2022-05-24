@@ -277,6 +277,15 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     ],
     "description": "standart"
 },
+"tw keyvalu from dic": {
+    "prefix": "keyvaluetw",
+    "body": [
+        "// $6//Get item from dictionary",
+        "KeyValuePair<${1:keyType}, ${2:valueType}> keyvalue$3 = ${4:dictionary}.ElementAt(${5:intI});",
+        "$0"
+    ],
+    "description": "standart"
+},
 ```
 ## Temas preferidos
 * Monokai
