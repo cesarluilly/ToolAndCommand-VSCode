@@ -142,9 +142,11 @@
 | 7 | Shift+F5| Stop |
 
 ### Comandos personalizados
-| # | Comando | Descripcion | Comentario |
-|:---:|:---:|:---:|:---:|
-| 1 | Ctrl+Shift+Ñ | Maximizar y minimizar la consola de comandos | "command": "workbench.action.toggleMaximizedPanel" |
+| # | Keybinding | Descripcion | Command | when |
+|:---:|:---:|:---:|:---:|:---:|
+| 1 | Ctrl+Shift+Ñ | Maximizar y minimizar la consola de comandos | "workbench.action.toggleMaximizedPanel" | terminalProcessSupported \|\| terminalWebExtensionContributedProfile |
+| 1 | Ctrl+K | Limpiar la consola de comandos | "workbench.action.terminal.clear" | "terminalFocus" | 
+| 1 | Ctrl+K | Limpiar la consola de debug | "workbench.debug.panel.action.clearReplAction" | "inDebugRepl" | 
 
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
