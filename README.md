@@ -26,6 +26,10 @@
 
 * [C# Version 1.24.4](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) Nota. Con esta version te de muchas herramientas para programar en .Net Core, pero algunas versiones como la 1.25.0 no funcionan bien, por eso hay que probar, y lo mas facil para probar es yendo a un metodo y presionar F12 o alt+f12, si este funciona quiere decir que la version si esta funcionando bien.
 
+## Comandos para .Net Core
+* dotnet build
+* dotnet run
+* dotnet watch run
 
 ## Comandos para codificar mas rapido en VSCode
 
