@@ -1,8 +1,9 @@
 # ToolAndCommand-VSCode
 
+## Generales de Visual Studio
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
-## Extensiones generales recomendadas basadas en el siguiente repo
-[Repo](https://github.com/CesarLuilly/curso-VSCode)
+## Extensiones generales recomendadas basadas en el siguiente repo [Codifica mas rapido por Fernando Herrera](https://github.com/CesarLuilly/curso-VSCode)
 
 * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
@@ -17,6 +18,14 @@
 
 ## Extensiones para testing
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
+
+## Extensiones para .NetCore
+* [.NET Core Tools](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet)
+
+* [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme)
+
+* [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+
 
 ## Comandos para codificar mas rapido en VSCode
 
