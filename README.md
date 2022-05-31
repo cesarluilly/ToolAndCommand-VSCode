@@ -235,11 +235,39 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     ],
     "description": "standart"
 },
+"tw method": {
+    "prefix": "twMethod",
+    "body": [
+        "//--------------------------------------------------------------------------------------------------------------",
+        "public ${1:static} ${2:void} ${3:nameMethod}(",
+        "\t//                                              //$4",
+        "",
+        "\t)",
+        "{",
+        "\t$0",
+        "}"
+    ],
+    "description": "standart"
+},
 "tw line support method": {
     "prefix": "twLineSupportMethod",
     "body": [
         "//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
         "$2"
+    ],
+    "description": "standart"
+},
+"tw support method": {
+    "prefix": "twSupportMethod",
+    "body": [
+        "//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
+        "public ${1:static} ${2:void} ${3:nameMethod}(",
+        "\t//                                              //$4",
+        "",
+        "\t)",
+        "{",
+        "\t$0",
+        "}"
     ],
     "description": "standart"
 },
