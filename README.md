@@ -26,6 +26,14 @@
 
 * [C# Version 1.24.4](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) Nota. Con esta version te de muchas herramientas para programar en .Net Core, pero algunas versiones como la 1.25.0 no funcionan bien, por eso hay que probar, y lo mas facil para probar es yendo a un metodo y presionar F12 o alt+f12, si este funciona quiere decir que la version si esta funcionando bien.
 
+## Abrir rapido un proyecto .Net Core recien clonado en VS Code.
+
+* Eliminar la carpeta .vscode en caso de tenerla.
+* Abrir una consola de comandos y compilar la solucion con `dotnet build`
+* Abrir la carpeta con VS Code donde se encuentra la solucion del proyecto.
+* Abrir el panel de comandos con `Ctrl+Shift+P` y buscar **omnisharp restart** (cuando termine de reiniciar aparecera un msj `Update project: Odyssey2Backend` hasta el ultimo en la consola de output con la opcion de `OmniSharp Log`)
+* Volvemos a abrir el panel de comandos y buscamos `Omnisharp Analize Current Project` y le clickeamos para analizar el proyecto
+
 ## Comandos para .Net Core
 * dotnet build
 * dotnet run
