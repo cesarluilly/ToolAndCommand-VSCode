@@ -126,14 +126,15 @@
 | 1 | Ctrl+G | Ir a una linea determinada de codigo |
 | 2 | F12 | Ir a la definicion de la clase |
 | 3 | Alt+F12 | Mostrar pequeña ventana de definicion de la clase |
-| 4 | Ctrl+P | Buscar archivos |
-| 5 | Ctrl+Shift+O | Busca todas las propiedades y metodos de la clase |
-| 6 | Ctrl+Shift+O : | Agrupamos todas las propiedades y metodos de la clase |
-| 7 | Ctrl+T | Buscar entre los metodos de toda la solucion |
-| 8 | Ctrl+Shift+. | Ver todos los metodos de un archivo |
-| 9 | Ctrl+F | Buscar en el documento actual |
-| 10 | F3 ò Shift+F3 ó Enter ó Shift+Enter | Siguiente/Anterior busqueda |
-| 11 | Alt+Enter | Poner cursor en todas las ocurrencias de la busqueda |
+| 4 | Shift+F12 | Mostrar todas las referencias de algun metodo, clase, variable |
+| 5 | Ctrl+P | Buscar archivos |
+| 6 | Ctrl+Shift+O | Busca todas las propiedades y metodos de la clase |
+| 7 | Ctrl+Shift+O : | Agrupamos todas las propiedades y metodos de la clase |
+| 8 | Ctrl+T | Buscar entre los metodos de toda la solucion |
+| 9 | Ctrl+Shift+. | Ver todos los metodos de un archivo |
+| 10 | Ctrl+F | Buscar en el documento actual |
+| 11 | F3 ò Shift+F3 ó Enter ó Shift+Enter | Siguiente/Anterior busqueda |
+| 12 | Alt+Enter | Poner cursor en todas las ocurrencias de la busqueda |
 
 ### Manejo de archivos
 | # | Comando | Descripcion | Comentario |
