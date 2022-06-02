@@ -1,5 +1,13 @@
 # ToolAndCommand-VSCode
 
+## Comandos y puntos pendientes a buscar.
+- Comando para quitar el scroll y la barra derecha que sirve para desplazarme entre el codigo
+
+- Comando para que la barra lateral Izquierda se pueda hacer mas grande con comando
+
+- Comando para que la barra lateral Izquierda se oculte cuando pongo el cursor en el editor de codigo.
+
+
 ## Generales de Visual Studio
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
@@ -61,6 +69,7 @@
 | 12 | Ctrl + K Ctrl + S | Ver atajos de teclado |
 | 13 | Ctrl + , | Configuracion del editor |
 | 14 | Abrir paleta comandos y Teclear "Folder" | Collapsar todos las carpetas |
+| 15 | Ctrl+Ship+p y tecleamos `Reload window` | Recargar visual studio code |
 
 ### Relacionados Multicursores
 | # | Comando | Descripcion | Comentario |
