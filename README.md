@@ -168,6 +168,7 @@
 | 1 | Ctrl+Shift+Ñ | Maximizar y minimizar la consola de comandos | "workbench.action.toggleMaximizedPanel" | terminalProcessSupported \|\| terminalWebExtensionContributedProfile |
 | 1 | Ctrl+K | Limpiar la consola de comandos | "workbench.action.terminal.clear" | "terminalFocus" | 
 | 1 | Ctrl+K | Limpiar la consola de debug | "workbench.debug.panel.action.clearReplAction" | "inDebugRepl" | 
+| 1 | Alt+Q | Mostrar u ocultar el panel inferior | View: Toggle Panel Visibility | "-" | 
 
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
