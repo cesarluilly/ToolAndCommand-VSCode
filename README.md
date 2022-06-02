@@ -351,3 +351,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 ## Temas preferidos
 * Monokai
 
+## Configuracion del modo Zen Preferido
+
+![modoZen1](./imgReadme/configZen1.jpg)
+![modoZen2](./imgReadme/modoZen2.jpg)
