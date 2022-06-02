@@ -1,9 +1,6 @@
 # ToolAndCommand-VSCode
 
 ## Comandos y puntos pendientes a buscar.
-- Comando para quitar el scroll y la barra derecha que sirve para desplazarme entre el codigo
-
-- Comando para que la barra lateral Izquierda se pueda hacer mas grande con comando
 
 - Comando para que la barra lateral Izquierda se oculte cuando pongo el cursor en el editor de codigo.
 
