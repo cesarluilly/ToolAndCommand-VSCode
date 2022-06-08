@@ -346,6 +346,25 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     "description": "standart"
 },
 ```
+
+## Markdown
+```
+"imgReadme": {
+    "prefix": "imgReadme",
+    "body": [
+        "![$1](./$2)$0",
+    ],
+    "description": "Agregar imagen al readme."
+},
+"link": {
+    "prefix": "link",
+    "body": [
+        "[$1]($2)$0",
+    ],
+    "description": "Agregar enlace al readme."
+}
+```
+
 ## Temas preferidos
 * Monokai
 
