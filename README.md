@@ -44,6 +44,10 @@
 * dotnet run
 * dotnet watch run
 
+## Instalaciones necesarias para cubrir NodeJS de Udemy por Fernando Herrera.
+
+* [NodeJs](https://gist.github.com/Klerith/177c153db77e566cb763f79e65d248bf)
+
 ## Comandos para codificar mas rapido en VSCode
 
 ### Atajos Generales
