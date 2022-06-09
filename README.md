@@ -349,6 +349,43 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     ],
     "description": "standart"
 },
+"dynamic var tw": {
+    "prefix": "dynamicVartw",
+    "body": [
+        "//                                                  //${2:dynamicVarName}",
+        "private bool boolWas${2:dynamicVarName}CalculatedAux_Z;",
+        "private ${1:bool} ${2:dynamicVarName}_Z;",
+        "public ${1:bool} ${2:dynamicVarName}",
+        "{",
+        "    get",
+        "    {",
+        "        this.subGet${2:dynamicVarName}(",
+        "            out ${2:dynamicVarName}_Z);",
+        "        return ${2:dynamicVarName}_Z;",
+        "    }",
+        "}",
+        "",
+        "//--------------------------------------------------------------------------------------------------------------",
+        "private void subGet${2:dynamicVarName}(",
+        "    //                                              //Get ${2:dynamicVarName}.",
+        "",
+        "    out ${1:bool} ${2:dynamicVarName}_O",
+        "    )",
+        "{",
+        "    ${2:dynamicVarName}_O = this.${2:dynamicVarName}_Z;",
+        "    if (",
+        "        //                                          //Verify that it is false.",
+        "        this.boolWas${2:dynamicVarName}CalculatedAux_Z == false &&",
+        "        this.context_Z != null",
+        "        )",
+        "    {",
+        "        boolWas${2:dynamicVarName}CalculatedAux_Z = true;",
+        "        $0",
+        "    }",
+        "}"
+    ],
+    "description": "DinamicVar."
+}
 ```
 
 ## Markdown
