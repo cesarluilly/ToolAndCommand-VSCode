@@ -34,7 +34,8 @@
 ## Abrir rapido un proyecto .Net Core recien clonado en VS Code.
 
 * Eliminar la carpeta .vscode en caso de tenerla.
-* Abrir una consola de comandos y compilar la solucion con `dotnet build`
+* Abrir una consola de comandos y limpiar la solucion con `dotnet clean`
+* Ejecutar el comando `dotnet build`
 * Abrir la carpeta con VS Code donde se encuentra la solucion del proyecto.
 * Abrir el panel de comandos con `Ctrl+Shift+P` y buscar **omnisharp restart** (cuando termine de reiniciar aparecera un msj `Update project: Odyssey2Backend` hasta el ultimo en la consola de output con la opcion de `OmniSharp Log`)
 * Volvemos a abrir el panel de comandos y buscamos `Omnisharp Analize Current Project` y le clickeamos para analizar el proyecto
