@@ -198,6 +198,14 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "//  //$1"
     ],
     "description": "comments"
+},
+"Separador de ejemplos": {
+    "prefix": "clgseparador",
+    "body": [
+        "console.log(\"Example ${1:1}************************************\");",
+        "$0"
+    ],
+    "description": "comments"
 }
 ```
 ### Typescript
