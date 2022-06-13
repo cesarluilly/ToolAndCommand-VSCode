@@ -406,7 +406,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "        this.context_Z != null",
         "        )",
         "    {",
-        "        boolWas${2:dynamicVarName}CalculatedAux_Z = true;",
+        "        this.boolWas${2:dynamicVarName}CalculatedAux_Z = true;",
         "        $0",
         "    }",
         "}"
