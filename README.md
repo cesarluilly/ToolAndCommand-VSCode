@@ -349,6 +349,14 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     ],
     "description": "standart"
 },
+"tw list": {
+    "prefix": "listtw",
+    "body": [
+        "List<${1:item}> darr${2:} = new List<${1:item}>();",
+        "$0"
+    ],
+    "description": "standart"
+},
 "tw keyvalu from dic": {
     "prefix": "keyvaluetw",
     "body": [
