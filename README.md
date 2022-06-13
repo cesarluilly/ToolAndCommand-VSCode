@@ -34,6 +34,11 @@
 ***
 Para que se pueda realizar el autocompletado hay que realizar la siguiente configuracion.
 > ![omnisharpUse](./imgReadme/omnisharpUse.jpg)
+Algunas otras configuraciones recomendadas
+> ![miniMap](./imgReadme/miniMap.jpg)
+> ![telemetry](./imgReadme/telemetry.jpg)
+> ![updateMode](./imgReadme/updateMode.jpg)
+> ![editoCodeLens](./imgReadme/editoCodeLens.jpg)
 ***
 
 ## Abrir rapido un proyecto .Net Core recien clonado en VS Code.
