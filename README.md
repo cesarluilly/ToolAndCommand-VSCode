@@ -29,7 +29,7 @@
 
 * [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme)
 
-* [C# Version 1.24.4](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) Nota. Con esta version te de muchas herramientas para programar en .Net Core, pero algunas versiones como la 1.25.0 no funcionan bien, por eso hay que probar, y lo mas facil para probar es yendo a un metodo y presionar F12 o alt+f12, si este funciona quiere decir que la version si esta funcionando bien. **Tambien dependiendo de la version de .netCore 3, 3.1, 5, 6 es la version de C# que se va a instalar**
+* [C# Version 1.24.4 o 1.23.17 para .netCore 3](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) Nota. Con esta version te de muchas herramientas para programar en .Net Core, pero algunas versiones como la 1.25.0 no funcionan bien, por eso hay que probar, y lo mas facil para probar es yendo a un metodo y presionar F12 o alt+f12, si este funciona quiere decir que la version si esta funcionando bien. **Tambien dependiendo de la version de .netCore 3, 3.1, 5, 6 es la version de C# que se va a instalar**
 
 ***
 Para que se pueda realizar el autocompletado hay que realizar la siguiente configuracion.
