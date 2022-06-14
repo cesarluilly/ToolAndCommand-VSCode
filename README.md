@@ -179,9 +179,11 @@ Algunas otras configuraciones recomendadas
 | # | Keybinding | Descripcion | Command | when |
 |:---:|:---:|:---:|:---:|:---:|
 | 1 | Ctrl+Shift+Ñ | Maximizar y minimizar la consola de comandos | "workbench.action.toggleMaximizedPanel" | terminalProcessSupported \|\| terminalWebExtensionContributedProfile |
-| 1 | Ctrl+K | Limpiar la consola de comandos | "workbench.action.terminal.clear" | "terminalFocus" | 
-| 1 | Ctrl+K | Limpiar la consola de debug | "workbench.debug.panel.action.clearReplAction" | "inDebugRepl" | 
-| 1 | Alt+Q | Mostrar u ocultar el panel inferior | View: Toggle Panel Visibility | "-" | 
+| 2 | Ctrl+K | Limpiar la consola de comandos | "workbench.action.terminal.clear" | "terminalFocus" | 
+| 3 | Ctrl+K | Limpiar la consola de debug | "workbench.debug.panel.action.clearReplAction" | "inDebugRepl" | 
+| 4 | Alt+Q | Mostrar u ocultar el panel inferior | View: Toggle Panel Visibility | "-" | 
+| 5 | Ctrl+Alt+N | Mover el sidebar a la Izquierda | "workbench.action.moveSideBarLeft" | "-" | 
+| 6 | Ctrl+Alt+M | Mover el sidebar a la Derecha | "workbench.action.moveSideBarRight" | "-" | 
 
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
 
