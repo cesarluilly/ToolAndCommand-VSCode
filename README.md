@@ -22,7 +22,7 @@
 | [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) | **`Not Defined`** | "" | "" |
 | [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | **`Not Defined`** | "" | "" |
 | [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme) | **`.Net Core`** | "Dark" | "" |
-|  |  | "" | "" |
+| [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | **`All`** | "Disable" | "Solo activarla cuando se requiera para no consumir recursos de mas" |
 
 ## Comandos y puntos pendientes a buscar.
 
