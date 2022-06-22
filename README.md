@@ -2,27 +2,30 @@
 
 ## Extensiones Grals de VSCode
 
-|algo|y|a|
-|---|---|---|
-| [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)|**`All`**||  
+|Extension|Plataformas|Configuracion|Descripcion
+|---|---|---|---|
+| [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)|**`All`**|""|""|  
 
-> [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) **`All`**
+| [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | **`All`** | "" | "" |
 
-* > [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) **`All`**
+| [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) | **`All`** | "React Blue" | "" |
+| [C#](https://github.com/OmniSharp/omnisharp-vscode/issues/1585) | **`.Net Core`** | "" | "" |
+| [Community Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-community-material-theme) | **`Not Defined`** | "" | "" |
+| [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) | **`Not Defined`** | "" | "" |
+| [Monokai Night Theme](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-monokai-night) | **`NodeJs`** | "Dark" | "" |
+| [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) | **`All`** | "" | "" |
+| [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal) | **`All`** | "" | "" |
+| [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) | **`.Net Core`** | "" | "" |
+| [Liveserver](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) | **`NodeJs`** | "" | "" |
+| [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) | **`NodeJs`** | "" | "" |
+| [TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) | **`Not Defined`** | "" | "" |
+| [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) | **`Not Defined`** | "" | "" |
+| [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) | **`Not Defined`** | "" | "" |
+| [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) | **`Not Defined`** | "" | "" |
+| [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | **`Not Defined`** | "" | "" |
+| [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme) | **`.Net Core`** | "Dark" | "" |
+|  |  | "" | "" |
 
-* > https://github.com/OmniSharp/omnisharp-vscode/issues/1585 **`.Net Core`**
-
-* > [Community Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-community-material-theme) **`All`**
-
-* > [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-
-* > [Monokai Night Theme](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-monokai-night)
-
-* > [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
-
-* > [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
-
-* > [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 ## Comandos y puntos pendientes a buscar.
 
@@ -34,24 +37,16 @@
 
 ## Extensiones generales recomendadas basadas en el siguiente repo [Codifica mas rapido por Fernando Herrera](https://github.com/CesarLuilly/curso-VSCode)
 
-* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-* [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-* [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-* [Liveserver](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-* [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
-* [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
-* [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
-* [TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-* [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
+* 
+* 
+* 
+* 
+* 
 
 ## Extensiones para testing
-* [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
+* 
 
 ## Extensiones para .NetCore
-* [.NET Core Tools](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet)
-
-* [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme)
 
 * [C# Version 1.24.4 o 1.23.17 para .netCore 3](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) Nota. Con esta version te de muchas herramientas para programar en .Net Core, pero algunas versiones como la 1.25.0 no funcionan bien, por eso hay que probar, y lo mas facil para probar es yendo a un metodo y presionar F12 o alt+f12, si este funciona quiere decir que la version si esta funcionando bien. **Tambien dependiendo de la version de .netCore 3, 3.1, 5, 6 es la version de C# que se va a instalar**
 
@@ -106,6 +101,7 @@ Algunas otras configuraciones recomendadas
 | 13 | Ctrl + , | Configuracion del editor |
 | 14 | Abrir paleta comandos y Teclear "Folder" | Collapsar todos las carpetas |
 | 15 | Ctrl+Ship+p y tecleamos `Reload window` | Recargar visual studio code |
+| 15 | Ctrl+Delete | Borra del punto actual hasta la proxima palabra de atras |
 
 ### Relacionados Multicursores
 | # | Comando | Descripcion | Comentario |
