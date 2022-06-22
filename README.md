@@ -5,9 +5,7 @@
 |Extension|Plataformas|Configuracion|Descripcion
 |---|---|---|---|
 | [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)|**`All`**|""|""|  
-
 | [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | **`All`** | "" | "" |
-
 | [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) | **`All`** | "React Blue" | "" |
 | [C#](https://github.com/OmniSharp/omnisharp-vscode/issues/1585) | **`.Net Core`** | "" | "" |
 | [Community Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-community-material-theme) | **`Not Defined`** | "" | "" |
@@ -25,7 +23,6 @@
 | [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | **`Not Defined`** | "" | "" |
 | [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme) | **`.Net Core`** | "Dark" | "" |
 |  |  | "" | "" |
-
 
 ## Comandos y puntos pendientes a buscar.
 
