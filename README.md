@@ -6,7 +6,7 @@
 |---|---|---|
 | [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)|**`All`**||  
 
-* > [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) **`All`**
+> [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) **`All`**
 
 * > [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) **`All`**
 
