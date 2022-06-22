@@ -2,23 +2,27 @@
 
 ## Extensiones Grals de VSCode
 
-* > [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) 
+|algo|y|a|
+|---|---|---|
+| [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)|**`All`**||  
 
-* > [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+* > [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) **`All`**
 
-* > [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
+* > [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock) **`All`**
 
-* > https://github.com/OmniSharp/omnisharp-vscode/issues/1585
+* > https://github.com/OmniSharp/omnisharp-vscode/issues/1585 **`.Net Core`**
 
-Equinusocio.vsc-community-material-theme
-PKief.material-icon-theme
-Equinusocio.vsc-material-theme
-equinusocio.vsc-material-theme-icons
-fabiospampinato.vscode-monokai-night
-quicktype.quicktype
-formulahendry.terminal
-kast789.vs-2019-theme
-vscode-icons-team.vscode-icons
+* > [Community Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-community-material-theme) **`All`**
+
+* > [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+* > [Monokai Night Theme](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-monokai-night)
+
+* > [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
+
+* > [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
+
+* > [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 ## Comandos y puntos pendientes a buscar.
 
