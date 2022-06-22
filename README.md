@@ -2,8 +2,13 @@
 
 ## Extensiones Grals de VSCode
 
-[Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)
-[Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+* > [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) 
+
+* > [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+
+* > [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
+
+* > https://github.com/OmniSharp/omnisharp-vscode/issues/1585
 
 Equinusocio.vsc-community-material-theme
 PKief.material-icon-theme
