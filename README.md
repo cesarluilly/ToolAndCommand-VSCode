@@ -28,20 +28,9 @@
 
 - Comando para que la barra lateral Izquierda se oculte cuando pongo el cursor en el editor de codigo.
 
-
-## Generales de Visual Studio
-* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+- Snipped que cuando me ponga caracteres en una determinada longitud (ruler) de la linea de codigo.
 
 ## Extensiones generales recomendadas basadas en el siguiente repo [Codifica mas rapido por Fernando Herrera](https://github.com/CesarLuilly/curso-VSCode)
-
-* 
-* 
-* 
-* 
-* 
-
-## Extensiones para testing
-* 
 
 ## Extensiones para .NetCore
 
@@ -59,7 +48,6 @@ Algunas otras configuraciones recomendadas
 
 ## Abrir rapido un proyecto .Net Core recien clonado en VS Code.
 
-* Eliminar la carpeta .vscode en caso de tenerla.
 * Abrir una consola de comandos y limpiar la solucion con `dotnet clean`
 * Ejecutar el comando `dotnet build`
 * Abrir la carpeta con VS Code donde se encuentra la solucion del proyecto.
@@ -452,10 +440,12 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 }
 ```
 
-## Temas preferidos
-* Monokai
-
 ## Configuracion del modo Zen Preferido
 
 ![modoZen1](./imgReadme/configZen1.jpg)
 ![modoZen2](./imgReadme/modoZen2.jpg)
+
+## Configuracion de linea de margen (Rulers)
+> Ir a Settings -> rulers -> Edit Rulers
+
+![rulers](./imgReadme/rulers.jpg)
