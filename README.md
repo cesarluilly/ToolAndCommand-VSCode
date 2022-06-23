@@ -44,6 +44,7 @@ Algunas otras configuraciones recomendadas
 > ![telemetry](./imgReadme/telemetry.jpg)
 > ![updateMode](./imgReadme/updateMode.jpg)
 > ![editoCodeLens](./imgReadme/editoCodeLens.jpg)
+> ![codeLens](./imgReadme/codeLens.jpg)
 ***
 
 ## Abrir rapido un proyecto .Net Core recien clonado en VS Code.
