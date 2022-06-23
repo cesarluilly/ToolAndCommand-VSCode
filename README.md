@@ -45,6 +45,7 @@ Algunas otras configuraciones recomendadas
 > ![updateMode](./imgReadme/updateMode.jpg)
 > ![editoCodeLens](./imgReadme/editoCodeLens.jpg)
 > ![codeLens](./imgReadme/codeLens.jpg)
+[Basado en el video](https://www.youtube.com/watch?v=jPTSLuluk8c&t=10s)
 ***
 
 ## Abrir rapido un proyecto .Net Core recien clonado en VS Code.
