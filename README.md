@@ -265,8 +265,8 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 }
 ```
 
-### TW
-```
+### TW C#
+```json
 "tw line class": {
     "prefix": "twLineClass",
     "body": [
@@ -421,11 +421,122 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "}"
     ],
     "description": "DinamicVar."
+},
+"entityColPrimaryKey": {
+    "prefix": "entityColPrimaryKey",
+    "body": [
+        "[Key]",
+        "[Column(\"Pk\")]",
+        "[DatabaseGenerated(DatabaseGeneratedOption.Identity)]",
+        "public int intPk { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de primary key"
+},
+"entityColString": {
+    "prefix": "entityColString",
+    "body": [
+        "${1:[Required]}",
+        "[Column(\"${2:name}\", TypeName = \"nvarchar(${3:100})\")]",
+        "public String str${2:name} { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de tipo cadena"
+},
+"entityColBooleanRequired": {
+    "prefix": "entityColBooleanRequired",
+    "body": [
+        "[Required]",
+        "[Column(\"${2:name}\", TypeName = \"bit\")]",
+        "public bool bool${2:name} { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de tipo booleano"
+},
+"entityColBooleanNulable": {
+    "prefix": "entityColBooleanNulable",
+    "body": [
+        "[Column(\"${1:name}\", TypeName = \"bit\")]",
+        "public bool? booln${1:name} { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de tipo booleano nulable"
+},
+"entityColDoubleRequired": {
+    "prefix": "entityColDoubleRequired",
+    "body": [
+        "[Required]",
+        "[Column(\"${2:name}\", TypeName = \"float\")]",
+        "public double num${2:name} { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de tipo double"
+},
+"entityColDoubleNulable": {
+    "prefix": "entityColDoubleNulable",
+    "body": [
+        "[Column(\"${1:name}\", TypeName = \"float\")]",
+        "public double? numn${1:name} { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de tipo double nulable"
+},
+"entityColIntRequired": {
+    "prefix": "entityColIntRequired",
+    "body": [
+        "[Required]",
+        "[Column(\"${2:name}\", TypeName = \"int\")]",
+        "public int int${2:name} { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de tipo entero"
+},
+"entityColIntNulable": {
+    "prefix": "entityColIntNulable",
+    "body": [
+        "[Column(\"${1:name}\", TypeName = \"int\")]",
+        "public int? int${1:name} { get; set; }",
+        "$0"
+    ],
+    "description": "Columna de tipo entero Nulable"
+},
+"entityColForeingKeyRequired": {
+    "prefix": "entityColForeingKeyRequired",
+    "body": [
+        "[Required]",
+        "[Column(\"Pk${1:ColName}\", TypeName = \"int\")]",
+        "public int intPk${1:ColName} { get; set; }",
+        "[ForeignKey(\"intPk${1:ColName}\")]",
+        "public ${2:FileEntityDB} Pk${1:ColName} { get; set; }",
+        "$0"
+    ],
+    "description": ""
+},
+"entityColForeingKeyNulable": {
+    "prefix": "entityColForeingKeyNulable",
+    "body": [
+        "[Column(\"Pk${1:ColName}\", TypeName = \"int\")]",
+        "public int? intnPk${1:ColName} { get; set; }",
+        "[ForeignKey(\"intnPk${1:ColName}\")]",
+        "public ${2:FileEntityDB} Pk${1:ColName} { get; set; }",
+        "$0"
+    ],
+    "description": ""
+},
+"entityBuilder": {
+    "prefix": "entityBuilder",
+    "body": [
+        "modelBuilder.Entity<${1:FileEntityDB}>()",
+        "    .HasOne(${2:entity} => ${2:entity}.${3:PkForeign}).WithMany()",
+        "    .OnDelete(DeleteBehavior.Restrict);",
+        "$0"
+    ],
+    "description": ""
 }
 ```
 
 ## Markdown
-```
+```json
 "imgReadme": {
     "prefix": "imgReadme",
     "body": [
@@ -439,6 +550,45 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "[$1]($2)$0",
     ],
     "description": "Agregar enlace al readme."
+}
+```
+
+## SQL
+```json
+"sqlForeignKey": {
+    "prefix": "sqlForeignKey",
+    "body": [
+        "Pk${1:Foreign} int ${2:not null},",
+        "CONSTRAINT FK_${3:CurrentTable}_${4:TableForeign}_Pk${1:PkForeign} FOREIGN KEY (Pk${1:PkForeign}) REFERENCES ${4:TableForeign} (Pk),",
+        "$0"
+    ],
+    "description": ""
+},
+"sqlPrimaryKey": {
+    "prefix": "sqlPrimaryKey",
+    "body": [
+        "Pk int IDENTITY (1, 1) not null,",
+        "CONSTRAINT Pk_${1:CurrentTable} PRIMARY KEY (Pk),",
+        "$0"
+    ],
+    "description": "Llave primaria"
+},
+"sqlAlterAddCol": {
+    "prefix": "sqlAlterAddCol",
+    "body": [
+        "alter table ${1:TableName} ADD ${2:ColumnName} int null;",
+    ],
+    "description": "Alter table add column"
+},
+"sqlAlterAddKeyForanea": {
+    "prefix": "sqlAlterAddKeyForanea",
+    "body": [
+        "alter table ${1:TableName} ADD ${2:ColumnForanea} int ${3:null};",
+        "alter table ${1:TableName} add constraint Fk_${1:TableName}_${4:TableForanea}_${2:ColumnForanea} ",
+        "     foreign key (${2:ColumnForanea})",
+        "     references ${4:TableForanea} (PK);"
+    ],
+    "description": "Alter table add column foranea"
 }
 ```
 
