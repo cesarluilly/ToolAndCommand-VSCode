@@ -655,7 +655,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
       "    ",
       "    $0",
       "    ",
-      "    return false;",
+      "    intStatus_IO == 200;",
       "}"
     ],
     "description": "Metodo tipo Post de un servicio"
