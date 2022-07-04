@@ -640,7 +640,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
       "    }",
       "}",
       "",
-      "//--------------------------------------------------------------------------------------------------------------",
+      "//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
       "private static bool ${7:NameClassSupport}.boolIsValid${1:NameService}(",
       "    //                                              //Method that valid data that is received of the service.",
       "",
