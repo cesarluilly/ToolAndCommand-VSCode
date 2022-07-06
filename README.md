@@ -122,6 +122,7 @@ Algunas otras configuraciones recomendadas
 | 10 | Shift+Alt+A | Comentar o descomentar bloque de codigo |
 | 11 | Ctrl+. | Ver diferentes tips que da VSCode |
 | 12 | Ctrl + ↓/↑ | Desplazar el archivo hacia arriba o abajo |
+| 13 | Ctrl+K Ctrl+F | Darle formato a la seleccion que se iso (Acomodar llaves, parentesis, etc) |
 
 ### Manejo del editor y Edicion
 | # | Comando | Descripcion | Comentario |
