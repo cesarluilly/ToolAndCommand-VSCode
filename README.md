@@ -23,6 +23,7 @@
 | [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | **`Not Defined`** | "" | "" |
 | [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme) | **`.Net Core`** | "Dark" | "" |
 | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | **`All`** | "Disable" | "Solo activarla cuando se requiera para no consumir recursos de mas" |
+| [SQL Server (mssql)](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) | **`.Net Core`** | | |
 
 ## Comandos y puntos pendientes a buscar.
 
