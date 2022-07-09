@@ -822,7 +822,33 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "     references ${4:TableForanea} (PK);"
     ],
     "description": "Alter table add column foranea"
+},
+"backupDB": {
+    "prefix": "backupDB",
+    "body": [
+      "USE ${1:sprint62folding};",
+      "GO",
+      "BACKUP DATABASE ${1:sprint62folding}",
+      "TO DISK = 'C:\\Program Files\\Microsoft SQL Server\\MSSQL15.MSSQLSERVER\\MSSQL\\Backup\\ $3.bak'",
+      "   WITH FORMAT,",
+      "      MEDIANAME = 'SQLServerBackups',",
+      "      NAME = 'Full Backup of  $3';",
+      "GO"
+    ],
+    "description": "Backup DB"
+},
+"restoreDB": {
+    "prefix": "restoreDB",
+    "body": [
+      "USE master;",
+      "GO",
+      "RESTORE DATABASE ${1:databaseName}",
+      "FROM DISK = 'C:\\Program Files\\Microsoft SQL Server\\MSSQL15.MSSQLSERVER\\MSSQL\\Backup\\ $2.bak' WITH  FILE = 1, NOUNLOAD, STATS = 5;",
+      "GO"
+    ],
+    "description": "Restore DB"
 }
+
 ```
 
 ## Configuracion del modo Zen Preferido
