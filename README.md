@@ -686,7 +686,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "}",
         "",
         "//--------------------------------------------------------------------------------------------------------------",
-        "public static void ${2:prefixEntityName}Add(",
+        "public static ${1:entityClassName} ${2:prefixEntityName}Add(",
         "    //                                              //Create a new record in the DB.",
         "",
         "    //int intColumnName,",
