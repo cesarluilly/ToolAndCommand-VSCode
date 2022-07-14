@@ -809,7 +809,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 "sqlAlterAddCol": {
     "prefix": "sqlAlterAddCol",
     "body": [
-        "alter table ${1:TableName} ADD ${2:ColumnName} int null;",
+        "alter table ${1:TableName} ADD ${2:ColumnName} ${3:int} ${4:null};",
     ],
     "description": "Alter table add column"
 },
