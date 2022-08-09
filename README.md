@@ -33,6 +33,25 @@
 
 ## Extensiones generales recomendadas basadas en el siguiente repo [Codifica mas rapido por Fernando Herrera](https://github.com/CesarLuilly/curso-VSCode)
 
+## Estensiones para Visual Studio
+https://www.youtube.com/watch?v=aLhwWwVQUCQ
+
+- Productivity Power Tools installation [03:30]
+- Align Assignments [12:00]: Aligns assignment statements by typing Ctrl+Alt+] 
+- Copy As Html [13:35]: Provides support for the HTML Clipboard format when cutting for copying code from the editor
+- Ctrl+Click GoTo Definition [15:40]: Enables clickable hyperlinks to symbols in source code in your code by holding down the Ctrl key when hovering with the mouse
+- Custom Document Well [18:45]: Allows users to change the behavior of their document tabs 
+- Double-Click Maximize [22:00]: Maximize any docked window by double-clicking its title bar and restore/dock by double-clicking again 
+- Editor Guidelines [22:45]: Draws a vertical line in the code editor to remind developers that their full line of code or comments may not fit one a single screen 
+- Fix Mixed Tabs [25:25]: Helps to manage the whitespace inside your document and assists in keeping consistency in the use of tabs and spaces 
+- Match Margin [28:10]: Highlights all the textual matches of token at the caret location in the Editor 
+- Middle-Click Scroll [29:08]: Enables you to press down on your scroll wheel and move the mouse to quickly scroll through your document 
+- Peek Help [30:05]: Brings up the F1 Help content inline in the editor 
+- Power Commands for Visual Studio [31:40]: A set of useful extensions for the Visual Studio IDE, including Remove and Sort Usings, Copy Path and Open Command Prompt 
+- Quick Launch Tasks [34:40]: Provides easy access to commonly used options (EG: toggling line numbers) as well as popular functionality (EG: collapsing/expanding regions)   
+- Shrink Empty Lines [36:15]: Shrinks lines that contain neither letters nor numbers by 25% vertically, allowing more lines to be displayed in the editor 
+- Solution Error Visualizer [38:00]: Adds error, warning, and message squiggles to Solution Explorer 
+- Time Stamp Margin [40:25]: Adds the timestamp information to the Output Window in Debug mode
 ## Extensiones para .NetCore
 
 * [C# Version 1.24.4 o 1.23.17 para .netCore 3](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) Nota. Con esta version te de muchas herramientas para programar en .Net Core, pero algunas versiones como la 1.25.0 no funcionan bien, por eso hay que probar, y lo mas facil para probar es yendo a un metodo y presionar F12 o alt+f12, si este funciona quiere decir que la version si esta funcionando bien. **Tambien dependiendo de la version de .netCore 3, 3.1, 5, 6 es la version de C# que se va a instalar**
@@ -195,6 +214,17 @@ Algunas otras configuraciones recomendadas
 | 6 | Ctrl+Alt+M | Mover el sidebar a la Derecha | "workbench.action.moveSideBarRight" | "-" | 
 
 Tomando como referencia **https://filisantillan.com/blog/vscode-atajos/**
+
+## Docker para .Net Core
+
+> Iniciamos PowerShell de Windows.
+
+|#| Comando | Descripcion |
+|:---:|:---:|:---:|
+| 1 | docker | Ver version |
+| 2 | docker image ls | Ver las imagenes Docker |
+| #|  | Nota. Para .Ner Core 3 Se necesitan descargar las img base |
+
 
 ## Comandos de SO Window
 | # | Comando | Descripcion |
