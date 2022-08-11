@@ -1,0 +1,75 @@
+{
+	// Place your snippets for sql here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"sqlForeignKey": {
+		"prefix": "sqlForeignKey",
+		"body": [
+		  "Pk${1:Foreign} int ${2:not null},",
+		  "CONSTRAINT FK_${3:CurrentTable}_${4:TableForeign}_Pk${1:PkForeign} FOREIGN KEY (Pk${1:PkForeign}) REFERENCES ${4:TableForeign} (Pk),",
+		  "$0"
+		],
+		"description": ""
+	},
+	"sqlPrimaryKey": {
+		"prefix": "sqlPrimaryKey",
+		"body": [
+		  "Pk int IDENTITY (1, 1) not null,",
+		  "CONSTRAINT Pk_${1:CurrentTable} PRIMARY KEY (Pk),",
+		  "$0"
+		],
+		"description": "Llave primaria"
+	},
+	"sqlAlterAddCol": {
+		"prefix": "sqlAlterAddCol",
+		"body": [
+		  "alter table ${1:TableName} ADD ${2:ColumnName} ${3:int} ${4:null};",
+		],
+		"description": "Alter table add column"
+	},
+	"sqlAlterAddKeyForanea": {
+		"prefix": "sqlAlterAddKeyForanea",
+		"body": [
+		  "alter table ${1:TableName} ADD ${2:ColumnForanea} int ${3:null};",
+		  "alter table ${1:TableName} add constraint Fk_${1:TableName}_${4:TableForanea}_${2:ColumnForanea} ",
+		  "     foreign key (${2:ColumnForanea})",
+		  "     references ${4:TableForanea} (PK);"
+		],
+		"description": "Alter table add column foranea"
+	},
+	"backupDB": {
+		"prefix": "backupDB",
+		"body": [
+		  "USE ${1:databaseName};",
+		  "GO",
+		  "BACKUP DATABASE ${1:databaseName}",
+		  "TO DISK = 'C:\\Program Files\\Microsoft SQL Server\\MSSQL15.MSSQLSERVER\\MSSQL\\Backup\\ $3.bak'",
+		  "   WITH FORMAT,",
+		  "      MEDIANAME = 'SQLServerBackups',",
+		  "      NAME = 'Full Backup of  $3';",
+		  "GO"
+		],
+		"description": "Backup DB"
+	},
+	"restoreDB": {
+		"prefix": "restoreDB",
+		"body": [
+		  "USE master;",
+		  "GO",
+		  "RESTORE DATABASE ${1:databaseName}",
+		  "FROM DISK = 'C:\\Program Files\\Microsoft SQL Server\\MSSQL15.MSSQLSERVER\\MSSQL\\Backup\\ $2.bak' WITH  FILE = 1, NOUNLOAD, STATS = 5;",
+		  "GO"
+		],
+		"description": "Restore DB"
+	  }
+}

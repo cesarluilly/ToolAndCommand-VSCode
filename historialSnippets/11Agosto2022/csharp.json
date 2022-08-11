@@ -1,0 +1,541 @@
+{
+	// Place your snippets for csharp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"tw line class": {
+		"prefix": "twLineClass",
+		"body": [
+			"//==================================================================================================================",
+			"$2"
+		],
+		"description": "standart"
+	},
+	"tw line method": {
+		"prefix": "twLineMethod",
+		"body": [
+			"//--------------------------------------------------------------------------------------------------------------",
+			"$2"
+		],
+		"description": "standart"
+	},
+	"tw method": {
+		"prefix": "twMethod",
+		"body": [
+			"//--------------------------------------------------------------------------------------------------------------",
+			"public ${1:static} ${2:void} ${3:nameMethod}(",
+			"\t//                                              //$4",
+			"",
+			"\t)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "standart"
+	},
+	"tw line support method": {
+		"prefix": "twLineSupportMethod",
+		"body": [
+			"//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
+			"$2"
+		],
+		"description": "standart"
+	},
+	"tw support method": {
+		"prefix": "twSupportMethod",
+		"body": [
+			"//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
+			"public ${1:static} ${2:void} ${3:nameMethod}(",
+			"\t//                                              //$4",
+			"",
+			"\t)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "standart"
+	},
+	"tw status info ": {
+		"prefix": "twStatusInfo",
+		"body": [
+			"intStatus_IO = $1;",
+            "strUserMessage_IO = \"$2\";",
+			"strDevMessage_IO = \"$3\";"
+		],
+		"description": "standart"
+	},
+	"tw if": {
+		"prefix": "iftw",
+		"body": [
+			"if (",
+            "\t//$2",
+            "\t${1:true}",
+			"\t)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "standart"
+	},
+	"tw foreach": {
+		"prefix": "foreachtw",
+		"body": [
+			"//  $5//Take each ${4:${2:item}}",
+            "foreach (${1:var} ${2:item} in ${3:collection})",
+            "{",
+			"\t$0",
+			"}"
+		],
+		"description": "standart"
+	},
+	"tw repeat while": {
+		"prefix": "whiletw",
+		"body": [
+			"int ${1:intI} = 0;",
+			"/*REPEAT-WHILE*/",
+			"while (",
+            "\t//$3",
+            "\t${1:intI} < ${2:collection}",
+			"\t)",
+			"{",
+			"\t$0",
+			"\t${1:intI} = ${1:intI} + 1;",
+			"}"
+		],
+		"description": "standart"
+	},
+	"tw list": {
+		"prefix": "listtw",
+		"body": [
+			"List<${1:item}> darr${2:} = new List<${1:item}>();",
+			"$0"
+		],
+		"description": "standart"
+	},
+	"tw keyvalu from dic": {
+		"prefix": "keyvaluetw",
+		"body": [
+			"// $6//Get item from dictionary",
+			"KeyValuePair<${1:keyType}, ${2:valueType}> keyvalue$3 = ${4:dictionary}.ElementAt(${5:intI});",
+			"$0"
+		],
+		"description": "standart"
+	},
+	"dynamic var tw": {
+		"prefix": "dynamicVartw",
+		"body": [
+		  "//                                                  //${2:dynamicVarName}",
+		  "private bool boolWas${2:dynamicVarName}CalculatedAux_Z;",
+		  "private ${1:bool} ${2:dynamicVarName}_Z;",
+		  "public ${1:bool} ${2:dynamicVarName}",
+		  "{",
+		  "    get",
+		  "    {",
+		  "        this.subGet${2:dynamicVarName}(",
+		  "            out ${2:dynamicVarName}_Z);",
+		  "        return ${2:dynamicVarName}_Z;",
+		  "    }",
+		  "}",
+		  "",
+		  "//--------------------------------------------------------------------------------------------------------------",
+		  "private void subGet${2:dynamicVarName}(",
+		  "    //                                              //Get ${2:dynamicVarName}.",
+		  "",
+		  "    out ${1:bool} ${2:dynamicVarName}_O",
+		  "    )",
+		  "{",
+		  "    ${2:dynamicVarName}_O = this.${2:dynamicVarName}_Z;",
+		  "    if (",
+		  "        //                                          //Verify that it is false.",
+		  "        this.boolWas${2:dynamicVarName}CalculatedAux_Z == false &&",
+		  "        this.context_Z != null",
+		  "        )",
+		  "    {",
+		  "        this.boolWas${2:dynamicVarName}CalculatedAux_Z = true;",
+		  "        $0",
+		  "    }",
+		  "}"
+		],
+		"description": "DinamicVar."
+	},
+	"entityColPrimaryKey": {
+		"prefix": "entityColPrimaryKey",
+		"body": [
+			"[Key]",
+			"[Column(\"Pk\")]",
+			"[DatabaseGenerated(DatabaseGeneratedOption.Identity)]",
+			"public int intPk { get; set; }",
+			"$0"
+		],
+		"description": "Columna de primary key"
+	},
+	"entityColString": {
+		"prefix": "entityColString",
+		"body": [
+			"${1:[Required]}",
+			"[Column(\"${2:name}\", TypeName = \"nvarchar(${3:100})\")]",
+			"public String str${2:name} { get; set; }",
+			"$0"
+		],
+		"description": "Columna de tipo cadena"
+	},
+	"entityColBooleanRequired": {
+		"prefix": "entityColBooleanRequired",
+		"body": [
+			"[Required]",
+		  	"[Column(\"${2:name}\", TypeName = \"bit\")]",
+		  	"public bool bool${2:name} { get; set; }",
+			"$0"
+		],
+		"description": "Columna de tipo booleano"
+	},
+	"entityColBooleanNulable": {
+		"prefix": "entityColBooleanNulable",
+		"body": [
+		  	"[Column(\"${1:name}\", TypeName = \"bit\")]",
+		  	"public bool? booln${1:name} { get; set; }",
+			"$0"
+		],
+		"description": "Columna de tipo booleano nulable"
+	},
+	"entityColDoubleRequired": {
+		"prefix": "entityColDoubleRequired",
+		"body": [
+			"[Required]",
+		  	"[Column(\"${2:name}\", TypeName = \"float\")]",
+		  	"public double num${2:name} { get; set; }",
+			"$0"
+		],
+		"description": "Columna de tipo double"
+	},
+	"entityColDoubleNulable": {
+		"prefix": "entityColDoubleNulable",
+		"body": [
+		  	"[Column(\"${1:name}\", TypeName = \"float\")]",
+		  	"public double? numn${1:name} { get; set; }",
+			"$0"
+		],
+		"description": "Columna de tipo double nulable"
+	},
+	"entityColIntRequired": {
+		"prefix": "entityColIntRequired",
+		"body": [
+			"[Required]",
+		  	"[Column(\"${2:name}\", TypeName = \"int\")]",
+		  	"public int int${2:name} { get; set; }",
+			"$0"
+		],
+		"description": "Columna de tipo entero"
+	},
+	"entityColIntNulable": {
+		"prefix": "entityColIntNulable",
+		"body": [
+		  	"[Column(\"${1:name}\", TypeName = \"int\")]",
+		  	"public int? int${1:name} { get; set; }",
+			"$0"
+		],
+		"description": "Columna de tipo entero Nulable"
+	},
+	"entityColForeingKeyRequired": {
+		"prefix": "entityColForeingKeyRequired",
+		"body": [
+		  "[Required]",
+		  "[Column(\"Pk${1:ColName}\", TypeName = \"int\")]",
+		  "public int intPk${1:ColName} { get; set; }",
+		  "[ForeignKey(\"intPk${1:ColName}\")]",
+		  "public ${2:FileEntityDB} Pk${1:ColName} { get; set; }",
+		  "$0"
+		],
+		"description": ""
+	},
+	"entityColForeingKeyNulable": {
+		"prefix": "entityColForeingKeyNulable",
+		"body": [
+		  "[Column(\"Pk${1:ColName}\", TypeName = \"int\")]",
+		  "public int? intnPk${1:ColName} { get; set; }",
+		  "[ForeignKey(\"intnPk${1:ColName}\")]",
+		  "public ${2:FileEntityDB} Pk${1:ColName} { get; set; }",
+		  "$0"
+		],
+		"description": ""
+	},
+	"entityBuilder": {
+		"prefix": "entityBuilder",
+		"body": [
+		  "modelBuilder.Entity<${1:FileEntityDB}>()",
+		  "    .HasOne(${2:entity} => ${2:entity}.${3:PkForeign}).WithMany()",
+		  "    .OnDelete(DeleteBehavior.Restrict);",
+		  "$0"
+		],
+		"description": ""
+	},
+	"postServiceMethod": {
+		"prefix": "postServiceMethod",
+		"body": [
+			"//------------------------------------------------------------------------------------------------------------------",
+			"[Http${1:Post}(\"[action]\")]",
+			"public IActionResult ${2:NameService}(",
+			"    //                                              //PURPOSE:",
+			"    //                                              //${3:Purpose}.",
+			"",
+			"    //                                              //URL: http://localhost/Odyssey2/${4:Controller}",
+			"    //                                              //      /${2:NameService}",
+			"    //                                              //Method: POST.",
+			"",
+			"    //                                              //Use a JSON like this: visit the class.",
+			"",
+			"    //                                               //DESCRIPTION:",
+			"    //                                               //${5:Description}.",
+			"",
+			"    //                                               //RETURNS:",
+			"    //                                               //      200 - Ok",
+			"",
+			"    //                                               //Receives JSON Class with data.",
+			"    [FromBody] ${6:ClassReceiveData} ${7:nameInstance}",
+			"    )",
+			"{",
+			"    int intStatus = 400;",
+			"    String strUserMessage = \"Something is wrong.\";",
+			"    String strDevMessage = \"Invalid data.\";",
+			"    Object obj = null;",
+			"",
+			"    if (",
+			"        //                                          //Validate the data of the model.",
+			"        ModelState.IsValid",
+			"        )",
+			"    {",
+			"        //                                          //using is to release connection at the end",
+			"        using (Odyssey2Context context = new Odyssey2Context())",
+			"        {",
+			"            //                                      //Starts a new transaction.",
+			"            using (var dbContextTransaction = context.Database.BeginTransaction())",
+			"            {",
+			"                try",
+			"                {",
+			"                    //                              //Get the printshop id from token.",
+			"                    var idClaim = User.Claims.FirstOrDefault(c => c.Type == \"strPrintshopId\");",
+			"                    String strPrintshopId = idClaim.Value;",
+			"                    PsPrintShop ps = PsPrintShop.psGet(strPrintshopId);",
+			"",
+			"                    ${8:NameClassSupport}.sub${2:NameService}(${7:nameInstance}, ",
+			"                        ps, context, ref intStatus, ref strUserMessage, ref strDevMessage);",
+			"",
+			"                    obj = null;",
+			"",
+			"                    //                              //Commits all changes made to the database in the current",
+			"                    //                              //      transaction.",
+			"                    if (",
+			"                        intStatus == 200",
+			"                        )",
+			"                    {",
+			"                        dbContextTransaction.Commit();",
+			"                    }",
+			"                    else",
+			"                    {",
+			"                        dbContextTransaction.Rollback();",
+			"                    }",
+			"                }",
+			"                catch (Exception ex)",
+			"                {",
+			"                    //                              //Discards all changes made to the database in the current",
+			"                    //                              //      transaction.",
+			"                    dbContextTransaction.Rollback();",
+			"",
+			"                    //                              //Making a log for the exception.",
+			"                    Tools.subExceptionHandler(ex, ref intStatus, ref strUserMessage, ref strDevMessage);",
+			"                }",
+			"            }",
+			"        }",
+			"    }",
+			"",
+			"    //                                              //Response to the frontend.",
+			"    Respjson1ResponceJson1 respjson1 = new Respjson1ResponceJson1(intStatus, strUserMessage, strDevMessage,",
+			"        obj);",
+			"    IActionResult aresult = Ok(respjson1);",
+			"",
+			"    return aresult;",
+			"}",
+			"",
+			"//--------------------------------------------------------------------------------------------------------------",
+			"public static void ${8:NameClassSupport}.sub${2:NameService}(",
+			"    //                                              //Support method of the service",
+			"",
+			"    ${6:ClassReceiveData} ${7:nameInstance}_I,",
+			"    PsPrintShop ps_I,",
+			"    Odyssey2Context context_I,",
+			"    ref int intStatus_IO,",
+			"    ref String strUserMessage_IO,",
+			"    ref String strDevMessage_IO",
+			"    )",
+			"{",
+			"    if (",
+			"        //                                          //Valid data.",
+			"        ${8:NameClassSupport}.boolIsValid${2:NameService}(${7:nameInstance}_I, context_I, ref intStatus_IO, ref strUserMessage_IO,",
+			"            ref strDevMessage_IO)",
+			"        )",
+			"    {",
+			"        ",
+			"    }",
+			"}",
+			"",
+			"//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
+			"private static bool ${8:NameClassSupport}.boolIsValid${2:NameService}(",
+			"    //                                              //Method that valid data that is received of the service.",
+			"",
+			"    ${6:ClassReceiveData} ${7:nameInstance}_I,",
+			"    Odyssey2Context context_I,",
+			"    ref int intStatus_IO,",
+			"    ref String strUserMessage_IO,",
+			"    ref String strDevMessage_IO",
+			"    )",
+			"{",
+			"    intStatus_IO = 200;",
+			"    strUserMessage_IO = \"\";",
+			"    strDevMessage_IO = \"\";",
+			"    ",
+			"    $0",
+			"    ",
+			"    return intStatus_IO == 200;",
+			"}"
+		],
+		"description": "Metodo tipo Post de un servicio"
+	},
+	"daoCRUD": {
+		"prefix": "daoCRUD",
+		"body": [
+			"//--------------------------------------------------------------------------------------------------------------",
+			"//                                                  //This is a Data Access Object (DAO)",
+			"",
+			"//-------------------------------------------------------------------------------------------------------------",
+			"//                                                  //TRANSFORMATION METHODS.",
+		  "",
+		  "//-------------------------------------------------------------------------------------------------------------",
+		  "public static void subAdd(",
+		  "    //                                              //Create a new record in the DB",
+		  "",
+		  "    ${1:entityClassName} ${2:prefixEntityName}_I,",
+		  "    Odyssey2Context context_M",
+		  "    )",
+		  "{",
+		  "    context_M.${3:tableName}.Add(${2:prefixEntityName}_I);",
+		  "}",
+		  "",
+		  "//--------------------------------------------------------------------------------------------------------------",
+		  "public static ${1:entityClassName} ${2:prefixEntityName}Add(",
+		  "    //                                              //Create a new record in the DB.",
+		  "",
+		  "    //int intColumnName,",
+		  "    //int intColumnName,",
+		  "    // Complete all columns and assig to the next object entity.",
+		  "    Odyssey2Context context_M",
+		  "    )",
+		  "{",
+		  "    ${1:entityClassName} ${2:prefixEntityName} = new ${1:entityClassName} {",
+		  "        ",
+		  "    };",
+		  "    ",
+		  "    context_M.${3:tableName}.Add(${2:prefixEntityName});",
+		  "    return ${2:prefixEntityName};",
+		  "}",
+		  "",
+		  "//-------------------------------------------------------------------------------------------------------------",
+		  "public static void subUpdate(",
+		  "    //                                              //Update a record in the DB",
+		  "",
+		  "    ${1:entityClassName} ${2:prefixEntityName}_I,",
+		  "    Odyssey2Context context_M",
+		  "    )",
+		  "{",
+		  "    context_M.${3:tableName}.Update(${2:prefixEntityName}_I);",
+		  "}",
+		  "",
+		  "//-------------------------------------------------------------------------------------------------------------",
+		  "public static void subDelete(",
+		  "    //                                              //Delete a record in the DB",
+		  "",
+		  "    int intPk_I,",
+		  "    Odyssey2Context context_M",
+		  "    )",
+		  "{",
+		  "    ${1:entityClassName} ${2:prefixEntityName} = ",
+		  "        ${4:daoClassName}.${2:prefixEntityName}Get(intPk_I,",
+		  "        context_M);",
+		  "",
+		  "    context_M.${3:tableName}.Remove(${2:prefixEntityName});",
+		  "}",
+		  "",
+		  "//-------------------------------------------------------------------------------------------------------------",
+		  "//                                                  //ACCESS METHODS.",
+		  "",
+		  "",
+		  "//-------------------------------------------------------------------------------------------------------------",
+		  "public static ${1:entityClassName} ${2:prefixEntityName}Get(",
+		  "    //                                              //Get a record from the DB",
+		  "",
+		  "    int intPk_I,",
+		  "    Odyssey2Context context_I",
+		  "    )",
+		  "{",
+		  "    return context_I.${3:tableName}.Find(intPk_I);",
+		  "}",
+		  "",
+		  "//-------------------------------------------------------------------------------------------------------------",
+		  "public static bool boolIsValidPk(",
+		  "    //                                              //Verify if the PkExist.",
+		  "",
+		  "    int intPk_I,",
+		  "    Odyssey2Context context_I",
+		  "    )",
+		  "{",
+		  "    return context_I.${3:tableName}.Find(intPk_I).IsNotNull();",
+		  "}",
+		  "",
+		  "//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ",
+		  "public static void subValidate${2:prefixEntityName}(",
+		  "    //                                              //Validate the ${2:prefixEntityName}.",
+		  "",
+		  "    int intPk${2:prefixEntityName},",
+		  "    Odyssey2Context context_I,",
+		  "    ref int intStatus_IO,",
+		  "    ref String strUserMessage_IO,",
+		  "    ref String strDevMessage_IO",
+		  "    )",
+		  "{",
+		  "    if (",
+		  "        //                                          //All before is Ok.",
+		  "        intStatus_IO == 200",
+		  "        )",
+		  "    {",
+		  "        if (",
+		  "            //",
+		  "            !${4:daoClassName}.boolIsValidPk(intPk${2:prefixEntityName}, context_I)",
+		  "            )",
+		  "        {",
+		  "            intStatus_IO = 400;",
+		  "            strUserMessage_IO = \"Something Wrong.\";",
+		  "            strDevMessage_IO = \"${2:prefixEntityName} not exist.\";                    ",
+		  "        }",
+		  "    }",
+		  "}"
+		],
+		"description": "Operaciones basicas Crud"
+	},
+	"infoAuthor": {
+		"prefix": "infoAuthor",
+		"body": [
+		  "//                                                          //AUTHOR: Towa (CLGA - Cesar Garcia).",
+		  "//                                                          //CO-AUTHOR: Towa (${1:Coauthor}).",
+		  "//                                                          //DATE: ${2:Month} ${3:28th}, ${4:2022}. "
+		],
+		"description": "info de author del archivo"
+	}
+}
