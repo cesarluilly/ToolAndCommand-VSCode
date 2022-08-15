@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stStatusInfo</Title>
+			<Shortcut>stStatusInfo</Shortcut>
+			<Description>Code snippet for Status info</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>1</Default>
+					<ToolTip>Status info code</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>2</Default>
+					<ToolTip>User Message</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>Dev Message</Default>
+					<ToolTip>Dynamic variable</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[intStatus_IO = $1$;
+			strUserMessage_IO = "$2$";
+			strDevMessage_IO = "$3$";$selected$ $end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

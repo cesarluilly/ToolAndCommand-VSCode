@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stEntityColForeingKeyNulable</Title>
+			<Shortcut>stEntityColForeingKeyNulable</Shortcut>
+			<Description>Code snippet for Foreing Key nulable</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>ColName</Default>
+					<ToolTip>Column Name</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>FileEntityDB</Default>
+					<ToolTip>File Entity</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[[Column("Pk$1$}", TypeName = "int")]
+			public int? intnPk$1$} { get; set; }
+			[ForeignKey("intnPk$1$}")]
+			public $2$ Pk$1$} { get; set; }
+			$selected$ $end$ ]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

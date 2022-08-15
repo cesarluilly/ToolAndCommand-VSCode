@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stPostServiceMethod</Title>
+			<Shortcut>stPostServiceMethod</Shortcut>
+			<Description>Code snippet for Post Service</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>Post</Default>
+					<ToolTip>Post</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>NameService</Default>
+					<ToolTip>NameService</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>3</ID>
+					<Default>Purpose</Default>
+					<ToolTip>Purpose</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>4</ID>
+					<Default>Controller</Default>
+					<ToolTip>Controller</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>5</ID>
+					<Default>Description</Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>6</ID>
+					<Default>ClassReceiveData</Default>
+					<ToolTip>ClassReceiveData</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>7</ID>
+					<Default>nameInstance</Default>
+					<ToolTip>nameInstance</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>8</ID>
+					<Default>NameClassSupport</Default>
+					<ToolTip>NameClassSupport</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//------------------------------------------------------------------------------------------------------------------
+			[Http${1:Post}("[action]")]
+			public IActionResult ${2:NameService}(
+			    //                                              //PURPOSE:
+			    //                                              //${3:Purpose}.
+			
+			    //                                              //URL: http://localhost/Odyssey2/${4:Controller}
+			    //                                              //      /${2:NameService}
+			    //                                              //Method: POST.
+			
+			    //                                              //Use a JSON like this: visit the class.
+			
+			    //                                               //DESCRIPTION:
+			    //                                               //${5:Description}.
+			
+			    //                                               //RETURNS:
+			    //                                               //      200 - Ok
+			
+			    //                                               //Receives JSON Class with data.
+			    [FromBody] ${6:ClassReceiveData} ${7:nameInstance}
+			    )
+			{
+			    int intStatus = 400;
+			    String strUserMessage = "Something is wrong.";
+			    String strDevMessage = "Invalid data.";
+			    Object obj = null;
+			
+			    if (
+			        //                                          //Validate the data of the model.
+			        ModelState.IsValid
+			        )
+			    {
+			        //                                          //using is to release connection at the end
+			        using (Odyssey2Context context = new Odyssey2Context())
+			        {
+			            //                                      //Starts a new transaction.
+			            using (var dbContextTransaction = context.Database.BeginTransaction())
+			            {
+			                try
+			                {
+			                    //                              //Get the printshop id from token.
+			                    var idClaim = User.Claims.FirstOrDefault(c => c.Type == "strPrintshopId");
+			                    String strPrintshopId = idClaim.Value;
+			                    PsPrintShop ps = PsPrintShop.psGet(strPrintshopId);
+			
+			                    ${8:NameClassSupport}.sub${2:NameService}(${7:nameInstance}, 
+			                        ps, context, ref intStatus, ref strUserMessage, ref strDevMessage);
+			
+			                    obj = null;
+			
+			                    //                              //Commits all changes made to the database in the current
+			                    //                              //      transaction.
+			                    if (
+			                        intStatus == 200
+			                        )
+			                    {
+			                        dbContextTransaction.Commit();
+			                    }
+			                    else
+			                    {
+			                        dbContextTransaction.Rollback();
+			                    }
+			                }
+			                catch (Exception ex)
+			                {
+			                    //                              //Discards all changes made to the database in the current
+			                    //                              //      transaction.
+			                    dbContextTransaction.Rollback();
+			
+			                    //                              //Making a log for the exception.
+			                    Tools.subExceptionHandler(ex, ref intStatus, ref strUserMessage, ref strDevMessage);
+			                }
+			            }
+			        }
+			    }
+			
+			    //                                              //Response to the frontend.
+			    Respjson1ResponceJson1 respjson1 = new Respjson1ResponceJson1(intStatus, strUserMessage, strDevMessage,
+			        obj);
+			    IActionResult aresult = Ok(respjson1);
+			
+			    return aresult;
+			}
+			
+			//--------------------------------------------------------------------------------------------------------------
+			public static void ${8:NameClassSupport}.sub${2:NameService}(
+			    //                                              //Support method of the service
+			
+			    ${6:ClassReceiveData} ${7:nameInstance}_I,
+			    PsPrintShop ps_I,
+			    Odyssey2Context context_I,
+			    ref int intStatus_IO,
+			    ref String strUserMessage_IO,
+			    ref String strDevMessage_IO
+			    )
+			{
+			    if (
+			        //                                          //Valid data.
+			        ${8:NameClassSupport}.boolIsValid${2:NameService}(${7:nameInstance}_I, context_I, ref intStatus_IO, ref strUserMessage_IO,
+			            ref strDevMessage_IO)
+			        )
+			    {
+			        
+			    }
+			}
+			
+			//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+			private static bool ${8:NameClassSupport}.boolIsValid${2:NameService}(
+			    //                                              //Method that valid data that is received of the service.
+			
+			    ${6:ClassReceiveData} ${7:nameInstance}_I,
+			    Odyssey2Context context_I,
+			    ref int intStatus_IO,
+			    ref String strUserMessage_IO,
+			    ref String strDevMessage_IO
+			    )
+			{
+			    intStatus_IO = 200;
+			    strUserMessage_IO = "";
+			    strDevMessage_IO = "";
+			    
+			    $selected$ $end$
+			    
+			    return intStatus_IO == 200;
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
