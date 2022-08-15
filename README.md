@@ -31,6 +31,8 @@
 
 - Snipped que cuando me ponga caracteres en una determinada longitud (ruler) de la linea de codigo.
 
+- https://nodatime.org/  libreria para trabajar con fechas en .net core
+
 ## Extensiones generales recomendadas basadas en el siguiente repo [Codifica mas rapido por Fernando Herrera](https://github.com/CesarLuilly/curso-VSCode)
 
 ## Estensiones para Visual Studio
