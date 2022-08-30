@@ -87,6 +87,22 @@ Algunas otras configuraciones recomendadas
 
 * [NodeJs](https://gist.github.com/Klerith/177c153db77e566cb763f79e65d248bf)
 
+## Atajos de Window
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
+| 1 | Shift+F10 | Comando `ContextMenu` |
+
+
+## Atajos de Visual Studio
+Los comandos tambien se pueden econtrar en la siguiente liga.
+
+[Comandos de Visual Studio 2022](https://docs.microsoft.com/es-es/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
+
+
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
+| 1 | Shift+F10 + L | Limpia la consola de Output |
+
 ## Comandos para codificar mas rapido en VSCode
 
 ### Atajos Generales
