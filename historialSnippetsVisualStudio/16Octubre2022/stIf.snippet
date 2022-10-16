@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stIf</Title>
+			<Shortcut>stIf</Shortcut>
+			<Description>If Standart</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Description</ID>
+					<Default></Default>
+					<ToolTip>Description If</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>true</ID>
+					<Default>true</Default>
+					<ToolTip>Condition if</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[if (
+        		//$Description$
+            	$true$
+				)
+			{
+			    $selected$ $end$
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

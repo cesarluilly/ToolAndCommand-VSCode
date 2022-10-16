@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stWhile</Title>
+			<Shortcut>stWhile</Shortcut>
+			<Description>Code snippet for while</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>intI</ID>
+					<Default>intI</Default>
+					<ToolTip>Increment var</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>comment</ID>
+					<Default> </Default>
+					<ToolTip>Comments</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>collection</ID>
+					<Default>collection</Default>
+					<ToolTip>Collection</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[int $intI$ = 0;
+			/*REPEAT-WHILE*/
+			while (
+                //$comment$
+                $intI$ < $collection$
+			    )
+			{
+			    $selected$ $end$
+			$intI$ = $intI$ + 1;
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
