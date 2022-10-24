@@ -87,6 +87,9 @@ Algunas otras configuraciones recomendadas
 
 * [NodeJs](https://gist.github.com/Klerith/177c153db77e566cb763f79e65d248bf)
 
+## Instalaciones necesarias para cubrir Angular de cero a experto de Udemy por Fernando Herrera.
+[Angular](https://gist.github.com/Klerith/607dd6bb60b5a70bc5e4d9c81ef6501e)
+
 ## Atajos de Window
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
