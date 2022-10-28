@@ -940,3 +940,29 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 > Ir a Settings -> rulers -> Edit Rulers
 
 ![rulers](./imgReadme/rulers.jpg)
+
+# Kali linux
+## Alias para controlador de pantalla de Startech.com
+
+```bash
+# Se configuro en .bashrc
+# alias for DisplayLInk StartTech.com
+alias aliasdisplay='sudo service displaylink-driver stop && sudo service displaylink-driver start && xrandr --setprovideroutputsource 1 0 && xrandr --setprovideroutputsource 2 0 && xrandr --setprovideroutputsource 3 0 && xrandr --setprovideroutputsource 4 0'
+```
+
+## Alias para correr comandos de Angular
+```bash
+# Se configuro en .bashrc
+# alias for NG add manually.
+alias ng='~/.npm-global/bin/ng'
+```
+
+## Comando de servicios
+A veses cuando ciertas cosas no funcionen en Linux, tal ves
+es porque el servicio esta apagado o esta fallando por
+alguna razon y para eso hay que reiniciar el servicio.
+
+* `systemctl status bluetooth`
+* `systemctl stop bluetooth`
+* `systemctl start bluetooth`
+
