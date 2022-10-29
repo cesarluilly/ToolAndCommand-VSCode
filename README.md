@@ -943,6 +943,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 
 # Kali linux
 ## Alias para controlador de pantalla de Startech.com
+(Manual de configuracion)[https://github.com/AdnanHodzic/displaylink-debian/blob/master/post-install-guide.md]
 
 ```bash
 # Se configuro en .bashrc
