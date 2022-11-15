@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stDynamicVarInjectForeing</Title>
+			<Shortcut>stDynamicVarInjectForeing</Shortcut>
+			<Description>Code snippet for dynamic var for properties inject</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>dynamicVarName</ID>
+					<Default>dynamicVarName</Default>
+					<ToolTip>Dynamic variable</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>bool</ID>
+					<Default>bool</Default>
+					<ToolTip>Data Type of Dynamic var</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>dto</ID>
+					<Default>dto</Default>
+					<ToolTip>Dto</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>intPkForeing</ID>
+					<Default>intPkForeing</Default>
+					<ToolTip>Pk Foreing</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//                                                  //$dynamicVarName$Foreign
+			private bool boolWas$dynamicVarName$ForeignCalculatedAux_Z;
+			private $bool$ $dynamicVarName$Foreign_Z;
+			public $bool$ $dynamicVarName$Foreign
+			{
+				get
+				{
+					this.subGet$dynamicVarName$Foreign(
+						out $dynamicVarName$Foreign_Z);
+					return $dynamicVarName$Foreign_Z;
+				}
+			}
+
+			//--------------------------------------------------------------------------------------------------------------
+			private void subGet$dynamicVarName$Foreign(
+				//                                              //Get $dynamicVarName$Foreign.
+
+				out $bool$ $dynamicVarName$Foreign_O
+				)
+			{
+				$dynamicVarName$Foreign_O = this.$dynamicVarName$Foreign_Z;
+				if (
+					//                                          //Verify that it is false.
+					this.boolWas$dynamicVarName$ForeignCalculatedAux_Z == false 
+					)
+				{
+					this.boolWas$dynamicVarName$ForeignCalculatedAux_Z = true;
+					if (
+						//                                      //Verify if already was inject.
+						$dynamicVarName$Foreign_O != null
+						)
+					{
+						if (
+							//                                  //Verify if it is not the same Pk.
+							$dynamicVarName$Foreign_O.intPk != this.$dto$.$intPkForeing$
+							)
+						{
+							$dynamicVarName$Foreign_O = null;
+						}
+					}
+
+					if (
+						//                                      //It has not value
+						$dynamicVarName$Foreign_O == null &&
+						//                                      //Verify if PkForeing has a value
+						this.$dto$.$intPkForeing$ != null
+						)
+					{
+						//										//Build the instance.
+						$selected$ $end$
+					}
+				}
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

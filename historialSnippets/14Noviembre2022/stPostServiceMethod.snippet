@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stPostServiceMethod</Title>
+			<Shortcut>stPostServiceMethod</Shortcut>
+			<Description>Code snippet for Post Service</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>Post</Default>
+					<ToolTip>Post</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>NameService</Default>
+					<ToolTip>NameService</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>3</ID>
+					<Default>Purpose</Default>
+					<ToolTip>Purpose</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>4</ID>
+					<Default>Controller</Default>
+					<ToolTip>Controller</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>5</ID>
+					<Default></Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>6</ID>
+					<Default>[FromBody] </Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>7</ID>
+					<Default>ClassReceiveData</Default>
+					<ToolTip>ClassReceiveData</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>8</ID>
+					<Default>nameInstance</Default>
+					<ToolTip>nameInstance</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>9</ID>
+					<Default>NameClassSupport</Default>
+					<ToolTip>NameClassSupport</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>10</ID>
+					<Default>obj = </Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>11</ID>
+					<Default>int</Default>
+					<ToolTip>Return type</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>12</ID>
+					<Default>int</Default>
+					<ToolTip>Resturn type</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>13</ID>
+					<Default>intReturn</Default>
+					<ToolTip>Name var return</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>14</ID>
+					<Default> = </Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>15</ID>
+					<Default>null;</Default>
+					<ToolTip></ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//------------------------------------------------------------------------------------------------------------------
+			[Http$1$("[action]")]
+			public IActionResult $2$(
+			    //                                              //PURPOSE:
+			    //                                              //$3$.
+			
+			    //                                              //URL: http://localhost/Odyssey2/$4$
+			    //                                              //      /$2$
+			    //                                              //Method: $1$.
+			
+			    //                                              //Use a JSON like this: visit the class.
+			
+			    //                                               //DESCRIPTION:
+			    //                                               //$5$.
+			
+			    //                                               //RETURNS:
+			    //                                               //      200 - Ok
+			
+			    //                                               //Receives JSON Class with data.
+			    $6$$7$ $8$
+			    )
+			{
+			    int intStatus = 400;
+			    String strUserMessage = "Something is wrong.";
+			    String strDevMessage = "Invalid data.";
+			    Object obj = null;
+			
+			    if (
+			        //                                          //Validate the data of the model.
+			        ModelState.IsValid
+			        )
+			    {
+			        //                              			//Get the printshop id from token.
+					var idClaim = User.Claims.FirstOrDefault(c => c.Type == "strPrintshopId");
+					String strPrintshopId = idClaim.Value;
+
+					$10$
+					$9$.sub$2$($8$, strPrintshopId, 
+						ref intStatus, ref strUserMessage, ref strDevMessage);
+			    }
+			
+			    IActionResult aresult = Ok(new Respjson1ResponceJson1(intStatus, strUserMessage, strDevMessage,
+			        obj));
+			
+			    return aresult;
+			}
+			$selected$ $end$
+			//--------------------------------------------------------------------------------------------------------------
+			public static $11$ $9$.sub$2$(
+			    //                                              //Support method of the service
+			
+			    $7$ $8$_I,
+			    String strPrintshopId_I,
+			    ref int intStatus_IO,
+			    ref String strUserMessage_IO,
+			    ref String strDevMessage_IO
+			    )
+			{
+				$12$ $13$$14$$15$
+				using Odyssey2Context context = new Odyssey2Context();
+            	using var dbContextTransaction = context.Database.BeginTransaction();
+
+				try
+				{
+					PsPrintShop ps = PsPrintShop.psGetByPrintshopId(strPrintshopId_I);
+
+					if (
+						$9$.boolIsValid$2$Data($8$_I, ps, context, 
+							ref intStatus_IO, ref strUserMessage_IO, ref strDevMessage_IO)
+						)
+					{
+						$13$$14$
+						$9$.subDoTask$2$($8$_I, ps, context);
+						dbContextTransaction.Commit();	
+					}
+				}
+				catch (Exception ex)
+				{
+					dbContextTransaction.Rollback();
+					Tools.subExceptionHandler(ex, ref intStatus_IO, ref strUserMessage_IO, ref strDevMessage_IO);
+				}
+
+				return $13$;
+			}
+			
+			//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+			private static bool $9$.boolIsValid$2$Data(
+			    //                                              //Method that valid data that is received of the service.
+			
+			    $7$ $8$_I,
+				PsPrintShop ps_I,
+			    Odyssey2Context context_I,
+			    ref int intStatus_IO,
+			    ref String strUserMessage_IO,
+			    ref String strDevMessage_IO
+			    )
+			{
+			    intStatus_IO = 200;
+			    strUserMessage_IO = "";
+			    strDevMessage_IO = "";
+			    
+			    
+			    
+			    return intStatus_IO == 200;
+			}
+			
+			//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+			public static $11$ $9$.subDoTask$2$(
+				//                                              //Method that do task of the service.
+				
+			    $7$ $8$_I,
+			    PsPrintShop ps_I,
+			    Odyssey2Context context_I
+			    )
+			{
+			    $12$ $13$$14$$15$
+
+				return $13$;
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

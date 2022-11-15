@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stDynamicVarRelationOfStoryTo</Title>
+			<Shortcut>stDynamicVarRelationOfStoryTo</Shortcut>
+			<Description>Utilizado cuando quiero acceder a un objeto de historia a partir del objeto historia en el cual estoy actualmente</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>bool</ID>
+					<Default>bool</Default>
+					<ToolTip>Data Type of Dynamic var</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>dynamicVarName</ID>
+					<Default>dynamicVarName</Default>
+					<ToolTip>Dynamic variable</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>currentClass</ID>
+					<Default>currentClass</Default>
+					<ToolTip>Current class</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//                                                  //$dynamicVarName$RelationOfStoryTo
+			//                                                  //It is used whenever the $currentClass$ it is a story.
+			private bool boolWas$dynamicVarName$RelationOfStoryToCalculatedAux_Z;
+			private $bool$ $dynamicVarName$RelationOfStoryTo_Z;
+			public $bool$ $dynamicVarName$RelationOfStoryTo
+			{
+				get
+				{
+					this.subGet$dynamicVarName$RelationOfStoryTo(
+						out $dynamicVarName$RelationOfStoryTo_Z);
+					return $dynamicVarName$RelationOfStoryTo_Z;
+				}
+			}
+
+			//--------------------------------------------------------------------------------------------------------------
+			private void subGet$dynamicVarName$RelationOfStoryTo(
+				//                                              //Get $dynamicVarName$RelationOfStoryTo.
+
+				out $bool$ $dynamicVarName$RelationOfStoryTo_O
+				)
+			{
+				$dynamicVarName$RelationOfStoryTo_O = this.$dynamicVarName$RelationOfStoryTo_Z;
+				if (
+					//                                          //Verify that it is false.
+					this.boolWas$dynamicVarName$RelationOfStoryToCalculatedAux_Z == false
+					)
+				{
+					this.boolWas$dynamicVarName$RelationOfStoryToCalculatedAux_Z = true;
+					$selected$ $end$
+				}
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

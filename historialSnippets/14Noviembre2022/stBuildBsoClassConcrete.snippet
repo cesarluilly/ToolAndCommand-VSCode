@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stBuildBsoClassConcrete</Title>
+			<Shortcut>stBuildBsoClassConcrete</Shortcut>
+			<Description>Code snippet for BSO Class concrete</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>WfopWorkflowOptionBso</ID>
+					<Default>WfopWorkflowOptionBso</Default>
+					<ToolTip>Clase BSO</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>WfopentityWorkflowOptionEntityDB</ID>
+					<Default>WfopentityWorkflowOptionEntityDB</Default>
+					<ToolTip>Clase Entity</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>WfopWorkflowOptionDto</ID>
+					<Default>WfopWorkflowOptionDto</Default>
+					<ToolTip>Data Type of Dynamic var</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>wfopWorkflowOptionDto</ID>
+					<Default>wfopWorkflowOptionDto</Default>
+					<ToolTip>Prefijo Dto</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>WfopWorkflowOptionMapper</ID>
+					<Default>WfopWorkflowOptionMapper</Default>
+					<ToolTip>Clase Mapper</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>FromProperties</ID>
+					<Default>FromProperties</Default>
+					<ToolTip>Metodo GetFromProperties del mapper</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>WfopWorkflowOptionsDao</ID>
+					<Default>WfopWorkflowOptionsDao</Default>
+					<ToolTip>Clase Dao</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>wfop</ID>
+					<Default>wfop</Default>
+					<ToolTip>Prefijo de metodo de retorno del BSO</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>columnasIQY</ID>
+					<Default>columnasIQY</Default>
+					<ToolTip>Columnas de la consulta</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//==================================================================================================================
+			//                                                      //Responsabilidad: Proporciona propiedades y comportamientos 
+			//                                                      //   para el objeto.   
+			using System.Data.Entity;
+			using System.Linq;
+			using Odyssey2Backend.DAO;
+			using Odyssey2Backend.DB_Odyssey2;
+			using Odyssey2Backend.DTOByTable;
+			using Odyssey2Backend.DTOByTable.Mapper;
+			
+			// Clases y metodos necesarios para construir el BSO. Example -->
+			// - Clase BSO : WfopWorkflowOptionBso
+			// - Clase Entity : WfopentityWorkflowOptionEntityDB
+			// - Clase Dto : WfopWorkflowOptionDto
+			// - Prefijo Dto : wfopWorkflowOptionDto
+			// - Clase Mapper : WfopWorkflowOptionMapper
+			// - Metodo GetFromProperties del mapper : FromProperties
+			// - Clase Dao : WfopWorkflowOptionsDao
+			// - Prefijo de metodo de retorno del BSO : wfop
+			// - Columnas de la consulta : columnasIQY
+			// - Metodo GetOneByPk del Dao : GetOneByPk
+
+			public class $WfopWorkflowOptionBso$
+			{
+			    //-------------------------------------------------------------------------------------------------------------
+			    //                                                  //INSTANCE VARIABLES.
+
+			    //                                                  //
+			    private IQueryable<$WfopentityWorkflowOptionEntityDB$> iqyGetOneByPk_Z;
+			    private Odyssey2Context context_Z;
+
+			    public int intPk { get { return intPk_Z; } }
+			    private int intPk_Z;
+
+				$selected$ $end$
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //DYNAMIC VARIABLES.
+
+			    //                                                  //$wfopWorkflowOptionDto$
+			    private bool boolWas$wfopWorkflowOptionDto$CalculatedAux_Z;
+			    private $WfopWorkflowOptionDto$ $wfopWorkflowOptionDto$_Z;
+			    public $WfopWorkflowOptionDto$ $wfopWorkflowOptionDto$
+			    {
+			        get
+			        {
+			            this.subGet$wfopWorkflowOptionDto$(
+			                out $wfopWorkflowOptionDto$_Z);
+			            return $wfopWorkflowOptionDto$_Z;
+			        }
+			    }
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //DYNAMIC VARIABLES **RelationTo**.
+
+
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //DYNAMIC VARIABLES **Foreign**.
+
+
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //SUPPORT METHODS TO DYNAMIC VARIABLES.
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    private void subGet$wfopWorkflowOptionDto$(
+			        //                                              //Get $wfopWorkflowOptionDto$.
+
+			        out $WfopWorkflowOptionDto$ $wfopWorkflowOptionDto$_O
+			        )
+			    {
+			        $wfopWorkflowOptionDto$_O = this.$wfopWorkflowOptionDto$_Z;
+			        if (
+			            //                                          //Verify that it is false.
+			            this.boolWas$wfopWorkflowOptionDto$CalculatedAux_Z == false
+			            )
+			        {
+			            this.boolWas$wfopWorkflowOptionDto$CalculatedAux_Z = true;
+			            $wfopWorkflowOptionDto$_O = iqyGetOneByPk_Z.Select(col =>
+			                $WfopWorkflowOptionMapper$.$FromProperties$(
+								$columnasIQY$
+			                    )
+			                ).AsNoTracking().FirstOrDefault();
+			        }
+			    }
+
+			    //-------------------------------------------------------------------------------------------------------------
+			    //                                                  //CONSTRUCTORS.
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    public $WfopWorkflowOptionBso$(
+			        $WfopWorkflowOptionDto$ $wfopWorkflowOptionDto$_I,
+			        Odyssey2Context context_I
+			        )
+			    {
+			        //                                              //Assig data related to Dto.
+			        this.$wfopWorkflowOptionDto$_Z = $wfopWorkflowOptionDto$_I;
+			        this.boolWas$wfopWorkflowOptionDto$CalculatedAux_Z = true;
+			        this.intPk_Z = $wfopWorkflowOptionDto$_I.intPk;
+			        this.context_Z = context_I;
+
+			        //                                              //Inject dependences.
+
+
+			        //                                              //Init the Query.
+			        this.iqyGetOneByPk_Z = $WfopWorkflowOptionsDao$.GetOneByPk(this.intPk, this.context_Z);
+			    }
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //TRANSFORMATION METHODS.
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    public void subReset(
+			        //                                              //Reset the info entity for after get info updated.
+
+			        )
+			    {
+			        this.boolWas$wfopWorkflowOptionDto$CalculatedAux_Z = false;
+
+			        //                                              //Get info.
+			        var init = this.$wfopWorkflowOptionDto$;
+			    }
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //ACCESS METHODS.
+			    public static $WfopWorkflowOptionBso$ $wfop$FromDB(
+				
+			        int intPk_I,
+			        Odyssey2Context context_I
+			        )
+			    {
+			        $WfopWorkflowOptionBso$ bso = null;
+			        $WfopWorkflowOptionDto$ dto = $WfopWorkflowOptionsDao$.GetOneByPk(intPk_I, context_I).Select(col =>
+			                $WfopWorkflowOptionMapper$.$FromProperties$(
+			                    $columnasIQY$
+			                    )).AsNoTracking().FirstOrDefault();
+			        if (
+			            dto != null
+			            )
+			            bso = new $WfopWorkflowOptionBso$(dto, context_I);
+			        return bso;
+			    }
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //ACCESS METHODS.
+			    public static $WfopWorkflowOptionBso$ $wfop$FromIQueryable(
+				
+			        IQueryable<$WfopentityWorkflowOptionEntityDB$> iqy_I,
+			        Odyssey2Context context_I
+			        )
+			    {
+			        $WfopWorkflowOptionBso$ bso = null;
+			        $WfopWorkflowOptionDto$ dto = iqy_I.Select(col =>
+			                $WfopWorkflowOptionMapper$.$FromProperties$(
+			                    $columnasIQY$
+			                    )
+			                ).AsNoTracking().FirstOrDefault();
+			        if (
+			            dto != null
+			            )
+			            bso = new $WfopWorkflowOptionBso$(dto, context_I);
+			        return bso;
+			    }
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    public static List<$WfopWorkflowOptionBso$> darr$wfop$FromIQueryable(
+				
+			        IQueryable<$WfopentityWorkflowOptionEntityDB$> iqy_I,
+			        Odyssey2Context context_I
+			        )
+			    {
+			        List<$WfopWorkflowOptionDto$> darrdto = iqy_I.Select(col =>
+			                $WfopWorkflowOptionMapper$.$FromProperties$(
+			                    $columnasIQY$
+			                    )
+			                ).AsNoTracking().ToList();
+
+			        List<$WfopWorkflowOptionBso$> darrbso = darrdto.Select(dtdto => new $WfopWorkflowOptionBso$(dtdto, 
+			                context_I)).ToList();
+
+			        return darrbso;
+			    }
+			}
+
+			//==================================================================================================================]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
