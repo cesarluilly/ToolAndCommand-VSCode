@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stBuildBsoWithEntityClassDadAbstract</Title>
+			<Shortcut>stBuildBsoWithEntityClassDadAbstract</Shortcut>
+			<Description>Code snippet for BSO Class concrete</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>WfopWorkflowOptionBso</ID>
+					<Default>WfopWorkflowOptionBso</Default>
+					<ToolTip>Clase BSO</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>WfopentityWorkflowOptionEntityDB</ID>
+					<Default>WfopentityWorkflowOptionEntityDB</Default>
+					<ToolTip>Clase Entity</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>wfopentityWorkflowOption</ID>
+					<Default>wfopentityWorkflowOption</Default>
+					<ToolTip>Prefijo Entity</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>WfopWorkflowOptionsDao</ID>
+					<Default>WfopWorkflowOptionsDao</Default>
+					<ToolTip>Clase Dao</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>wfop</ID>
+					<Default>wfop</Default>
+					<ToolTip>Prefijo de metodo de retorno del BSO</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>columnasIQY</ID>
+					<Default>columnasIQY</Default>
+					<ToolTip>Columnas de la consulta</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//==================================================================================================================
+			//                                                      //Responsabilidad: Proporciona propiedades y comportamientos 
+			//                                                      //   para el objeto.   
+			using System.Data.Entity;
+			using System.Linq;
+			using Odyssey2Backend.DAO;
+			using Odyssey2Backend.DB_Odyssey2;
+			
+			// Clases y metodos necesarios para construir el BSO. Example -->
+			// - Clase BSO : WfopWorkflowOptionBso
+			// - Clase Entity : WfopentityWorkflowOptionEntityDB
+			// - Prefijo entity : wfopentityWorkflowOption
+			// - Clase Dao : WfopWorkflowOptionsDao
+			// - Prefijo de metodo de retorno del BSO : wfop
+			// - Columnas de la consulta : columnasIQY
+			// - Metodo GetOneByPk del Dao : GetOneByPk
+
+			public abstract class $WfopWorkflowOptionBso$
+			{
+			    //-------------------------------------------------------------------------------------------------------------
+			    //                                                  //INSTANCE VARIABLES.
+
+			    //                                                  //
+			    private IQueryable<$WfopentityWorkflowOptionEntityDB$> iqyGetOneByPk_Z;
+			    private Odyssey2Context context_Z;
+
+				public bool boolAsTracking { get { return boolAsTracking_Z; } }
+        		private bool boolAsTracking_Z;
+
+			    public int intPk { get { return intPk_Z; } }
+			    private int intPk_Z;
+
+				$selected$ $end$
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //DYNAMIC VARIABLES.
+
+			    //                                                  //$wfopentityWorkflowOption$
+			    private bool boolWas$wfopentityWorkflowOption$CalculatedAux_Z;
+			    private $WfopentityWorkflowOptionEntityDB$ $wfopentityWorkflowOption$_Z;
+			    protected $WfopentityWorkflowOptionEntityDB$ $wfopentityWorkflowOption$
+			    {
+			        get
+			        {
+			            this.subGet$wfopentityWorkflowOption$(
+			                out $wfopentityWorkflowOption$_Z);
+			            return $wfopentityWorkflowOption$_Z;
+			        }
+			    }
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //DYNAMIC VARIABLES **RelationTo**.
+
+
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //DYNAMIC VARIABLES **Foreign**.
+
+
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //SUPPORT METHODS TO DYNAMIC VARIABLES.
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    private void subGet$wfopentityWorkflowOption$(
+			        //                                              //Get $wfopentityWorkflowOption$.
+
+			        out $WfopentityWorkflowOptionEntityDB$ $wfopentityWorkflowOption$_O
+			        )
+			    {
+			        $wfopentityWorkflowOption$_O = this.$wfopentityWorkflowOption$_Z;
+			        if (
+			            //                                          //Verify that it is false.
+			            this.boolWas$wfopentityWorkflowOption$CalculatedAux_Z == false
+			            )
+			        {
+			            this.boolWas$wfopentityWorkflowOption$CalculatedAux_Z = true;
+			            $wfopentityWorkflowOption$_O = this.boolAsTracking_Z ?
+							iqyGetOneByPk_Z.FirstOrDefault() :
+							iqyGetOneByPk_Z.AsNoTracking().FirstOrDefault();
+			        }
+			    }
+
+			    //-------------------------------------------------------------------------------------------------------------
+			    //                                                  //CONSTRUCTORS.
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    public $WfopWorkflowOptionBso$(
+			        $WfopentityWorkflowOptionEntityDB$ $wfopentityWorkflowOption$_I,
+			        Odyssey2Context context_I,
+					bool boolAsTracking_I
+			        )
+			    {
+			        //                                              //Assig data related to Dto.
+			        this.$wfopentityWorkflowOption$_Z = $wfopentityWorkflowOption$_I;
+			        this.boolWas$wfopentityWorkflowOption$CalculatedAux_Z = true;
+			        this.intPk_Z = $wfopentityWorkflowOption$_I.intPk;
+			        this.context_Z = context_I;
+					this.boolAsTracking_Z = boolAsTracking_I;
+
+			        //                                              //Inject dependences.
+
+
+			        //                                              //Init the Query.
+			        this.iqyGetOneByPk_Z = $WfopWorkflowOptionsDao$.GetOneByPk(this.intPk, this.context_Z);
+			    }
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //TRANSFORMATION METHODS.
+
+				//--------------------------------------------------------------------------------------------------------------
+			    protected void subResetPropertiesDad(
+			        //                                              //Reset the info entity for after get info updated.
+
+					bool boolAsTracking_I
+			        )
+			    {
+			        this.boolWas$wfopentityWorkflowOption$CalculatedAux_Z = false;
+					this.boolAsTracking_Z = boolAsTracking_I;
+
+			        //                                              //Get info.
+			        var init = this.$wfopentityWorkflowOption$;
+			    }
+
+				//--------------------------------------------------------------------------------------------------------------
+        		public abstract void subReset(bool boolAsTracking_I);
+
+			    //--------------------------------------------------------------------------------------------------------------
+			    //                                                  //ACCESS METHODS.
+			    
+				
+			}
+
+			//==================================================================================================================]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

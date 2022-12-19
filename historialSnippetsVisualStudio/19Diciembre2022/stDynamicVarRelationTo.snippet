@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stDynamicVarRelationTo</Title>
+			<Shortcut>stDynamicVarRelationTo</Shortcut>
+			<Description>Code snippet for dynamic var</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>bool</ID>
+					<Default>bool</Default>
+					<ToolTip>Data Type of Dynamic var</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>dynamicVarName</ID>
+					<Default>dynamicVarName</Default>
+					<ToolTip>Dynamic variable</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//                                                  //$dynamicVarName$RelationTo
+			private bool boolWas$dynamicVarName$RelationToCalculatedAux_Z;
+			private $bool$ $dynamicVarName$RelationTo_Z;
+			public $bool$ $dynamicVarName$RelationTo
+			{
+				get
+				{
+					this.subGet$dynamicVarName$RelationTo(
+						out $dynamicVarName$RelationTo_Z);
+					return $dynamicVarName$RelationTo_Z;
+				}
+			}
+
+			//--------------------------------------------------------------------------------------------------------------
+			private void subGet$dynamicVarName$RelationTo(
+				//                                              //Get $dynamicVarName$RelationTo.
+
+				out $bool$ $dynamicVarName$RelationTo_O
+				)
+			{
+				$dynamicVarName$RelationTo_O = this.$dynamicVarName$RelationTo_Z;
+				if (
+					//                                          //Verify that it is false.
+					this.boolWas$dynamicVarName$RelationToCalculatedAux_Z == false
+					)
+				{
+					this.boolWas$dynamicVarName$RelationToCalculatedAux_Z = true;
+					$selected$ $end$
+				}
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
