@@ -970,6 +970,8 @@ alguna razon y para eso hay que reiniciar el servicio.
 ## Configurar mi terminal en Window [Tutorial](https://www.youtube.com/watch?v=cvK3dlMNGXQ)
 * Descargarmos "Terminal" desde PlayStore de Window.
 * Descargarmos "Power Shell" desde PlayStore de Window.
+* Configuracion de Terminal
+    * ![Configuracion Git Bash en Terminal](./imgReadme/configuracionTerminal.jpg)
 * Instalamos [Oh My Posh para window](https://ohmyposh.dev/) [Vemos la documentacion en la seccion de Instalacion.](https://ohmyposh.dev/docs/installation/windows) 
 * Configuramos los [Temas](https://ohmyposh.dev/docs/themes)
     * Los temas preferidos son los siguientes
