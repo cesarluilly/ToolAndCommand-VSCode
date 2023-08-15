@@ -967,3 +967,18 @@ alguna razon y para eso hay que reiniciar el servicio.
 * `systemctl stop bluetooth`
 * `systemctl start bluetooth`
 
+## Configurar mi terminal en Window [Tutorial](https://www.youtube.com/watch?v=cvK3dlMNGXQ)
+* Descargarmos "Terminal" desde PlayStore de Window.
+* Descargarmos "Power Shell" desde PlayStore de Window.
+* Instalamos [Oh My Posh para window](https://ohmyposh.dev/) [Vemos la documentacion en la seccion de Instalacion.](https://ohmyposh.dev/docs/installation/windows) 
+* Configuramos los [Temas](https://ohmyposh.dev/docs/themes)
+    * Los temas preferidos son los siguientes
+        * ```bash
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/kali.omp.json)"
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/zash.omp.json)"
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tonybaloney.omp.json)"
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tokyonight_storm.omp.json)"
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)"
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/hotstick.minimal.omp.json)"
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/gruvbox.omp.json)"
+        ```
