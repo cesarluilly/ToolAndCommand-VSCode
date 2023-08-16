@@ -988,3 +988,5 @@ alguna razon y para eso hay que reiniciar el servicio.
     * ![Voy a la documentacion y doy click en Nerd Fonts](./imgReadme/fontsOhMyPosh.jpg)
     * Para eso instalo las fuentes de Hack(Es la misma liga que lo de arriba) [En esta liga busco Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
     ![Fuentes de hack las muevo a la configuracion de window](./imgReadme/instalarFuentes.jpg)
+* ![Volvemos a la terminal y vamos a configuracion y abrimos el archivo json](./imgReadme/openFileJson.jpg)
+* ![Agregamos fontFace y fontSize, Nota. El nombre que pongamos tiene que coicidir o existir en la lista de fuentes de windows](./imgReadme/fontAtFileJson.jpg)
