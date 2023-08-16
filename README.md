@@ -984,3 +984,7 @@ alguna razon y para eso hay que reiniciar el servicio.
             eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/hotstick.minimal.omp.json)"
             eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/gruvbox.omp.json)"
         ```
+* Si llegaramos a notar que los iconos no se ponen bien, significa que hay que instalar fuentes
+    * ![Voy a la documentacion y doy click en Nerd Fonts](./imgReadme/fontsOhMyPosh.jpg)
+    * Para eso instalo las fuentes de Hack(Es la misma liga que lo de arriba) [En esta liga busco Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
+    ![Fuentes de hack las muevo a la configuracion de window](./imgReadme/instalarFuentes.jpg)
