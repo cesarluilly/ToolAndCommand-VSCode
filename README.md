@@ -990,3 +990,4 @@ alguna razon y para eso hay que reiniciar el servicio.
     ![Fuentes de hack las muevo a la configuracion de window](./imgReadme/instalarFuentes.jpg)
 * ![Volvemos a la terminal y vamos a configuracion y abrimos el archivo json](./imgReadme/openFileJson.jpg)
 * ![Agregamos fontFace y fontSize, Nota. El nombre que pongamos tiene que coicidir o existir en la lista de fuentes de windows](./imgReadme/fontAtFileJson.jpg)
+* ![Vemos que ya se muestran los iconos](./imgReadme/iconosQueSeMuestran.jpg)
