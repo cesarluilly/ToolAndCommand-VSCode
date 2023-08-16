@@ -974,15 +974,24 @@ alguna razon y para eso hay que reiniciar el servicio.
     * ![Configuracion Git Bash en Terminal](./imgReadme/configuracionTerminal.jpg)
 * Instalamos [Oh My Posh para window](https://ohmyposh.dev/) [Vemos la documentacion en la seccion de Instalacion.](https://ohmyposh.dev/docs/installation/windows) 
 * Configuramos los [Temas](https://ohmyposh.dev/docs/themes)
+    * ![El lugar para configurarlos en el archivo User/.bashrc](./imgReadme/filedotbashrc.jpg)
     * Los temas preferidos son los siguientes
         * ```bash
-            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/kali.omp.json)"
-            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/zash.omp.json)"
-            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tonybaloney.omp.json)"
-            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tokyonight_storm.omp.json)"
-            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)"
-            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/hotstick.minimal.omp.json)"
-            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/gruvbox.omp.json)"
+            # El de arriba es el mas favorito minimalista
+            eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/bubbles.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/kali.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/pararussel.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/robbyrussell.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tokyonight_storm.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/zash.omp.json)"
+
+            # El de arriba es el mas favorito con colores subrayados
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/hotstick.minimal.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/gruvbox.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tonybaloney.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/marcduiker.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)"
+            # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/stelbent-compact.minimal.omp.json)"
         ```
 * Si llegaramos a notar que los iconos no se ponen bien, significa que hay que instalar fuentes
     * ![Voy a la documentacion y doy click en Nerd Fonts](./imgReadme/fontsOhMyPosh.jpg)
