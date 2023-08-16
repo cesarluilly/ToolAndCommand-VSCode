@@ -942,6 +942,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 ![rulers](./imgReadme/rulers.jpg)
 
 # Kali linux
+* [Aprender mas sobre Scripting bash](./pdfReadme/0156-linux-guiones-shell-shell-scripts.pdf)
 ## Alias para controlador de pantalla de Startech.com
 (Manual de configuracion)[https://github.com/AdnanHodzic/displaylink-debian/blob/master/post-install-guide.md]
 
@@ -949,6 +950,12 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 # Se configuro en .bashrc
 # alias for DisplayLInk StartTech.com
 alias aliasdisplay='sudo service displaylink-driver stop && sudo service displaylink-driver start && xrandr --setprovideroutputsource 1 0 && xrandr --setprovideroutputsource 2 0 && xrandr --setprovideroutputsource 3 0 && xrandr --setprovideroutputsource 4 0'
+```
+
+## Alias para clonar 
+```bash
+alias cloneBackendOdyssey2="git clone https://gitlab.com/proyectoBackend"
+alias cloneFrontendOdyssey2="git clone https://gitlab.com/proyectoFrontend"
 ```
 
 ## Alias para correr comandos de Angular
