@@ -26,6 +26,12 @@
 | [SQL Server (mssql)](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) | **`.Net Core`** | | |
 | [Bootstrap And CSS Autocomplete (mssql)]([https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense) | **`Bootstrap All Version and CSS`** | | |
 
+## Software de ayuda para programar
+
+|Extension|Plataformas|Configuracion|Descripcion
+|---|---|---|---|
+| [Color Picker Tools PRO](https://www.microsoft.com/store/productId/9P744VBBPXM1?ocid=pdpshare)|**`Colors CSS`**|""|""|  
+
 ## Comandos y puntos pendientes a buscar.
 
 - Comando para que la barra lateral Izquierda se oculte cuando pongo el cursor en el editor de codigo.
