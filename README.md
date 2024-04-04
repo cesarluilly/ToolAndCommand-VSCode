@@ -24,6 +24,7 @@
 | [Visual Studio 2019 Theme](https://marketplace.visualstudio.com/items?itemName=kast789.vs-2019-theme) | **`.Net Core`** | "Dark" | "" |
 | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | **`All`** | "Disable" | "Solo activarla cuando se requiera para no consumir recursos de mas" |
 | [SQL Server (mssql)](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) | **`.Net Core`** | | |
+| [Bootstrap And CSS Autocomplete (mssql)]([https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense) | **`Bootstrap All Version and CSS`** | | |
 
 ## Comandos y puntos pendientes a buscar.
 
