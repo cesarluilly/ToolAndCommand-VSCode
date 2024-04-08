@@ -25,6 +25,18 @@
 | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | **`All`** | "Disable" | "Solo activarla cuando se requiera para no consumir recursos de mas" |
 | [SQL Server (mssql)](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) | **`.Net Core`** | | |
 | [Bootstrap And CSS Autocomplete (mssql)]([https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense) | **`Bootstrap All Version and CSS`** | | |
+| [Path Intellisense]()|**`PENDING FOR DEFINE`**|""|""|  
+| [Prettier - Code formatter]()|**`PENDING FOR DEFINE`**|""|""|  
+| [Angular Language Service]()|**`PENDING FOR DEFINE`**|""|""|  
+| [Image preview]()|**`PENDING FOR DEFINE`**|""|""|  
+| [TypeScript Importer]()|**`PENDING FOR DEFINE`**|""|""|  
+| [vscode-angular-html]()|**`PENDING FOR DEFINE`**|""|""|  
+| [IntelliSense for CSS class names in HTML]()|**`PENDING FOR DEFINE`**|""|""|  
+| [Material Icon Theme]()|**`PENDING FOR DEFINE`**|""|""|  
+| [Gitlens -- Git supercharged]()|**`PENDING FOR DEFINE`**|""|""|  
+| [CodeSnap]()|**`PENDING FOR DEFINE`**|""|""|  
+| []()|**`PENDING FOR DEFINE`**|""|""|  
+
 
 ## Software de ayuda para programar
 
