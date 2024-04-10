@@ -276,22 +276,22 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 ### Javascript
 ```
 "mostrar log": {
-    "prefix": "clg",
+    "prefix": "stlog",
     "body": [
-        "console.log(${1:\"Hola mundo\"});",
-        "$2"
+        "console.log('$1'$2);",
+        "$3"
     ],
     "description": "Mostrar el log en la o consulta"
 },
 "comments": {
-    "prefix": "//",
+    "prefix": "st//",
     "body": [
         "//  //$1"
     ],
     "description": "comments"
 },
 "Separador de ejemplos": {
-    "prefix": "clgseparador",
+    "prefix": "stlogseparador",
     "body": [
         "console.log(\"Example ${1:1}************************************\");",
         "$0"
@@ -302,15 +302,15 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 ### Typescript
 ```
 "mostrar log": {
-    "prefix": "clg",
+    "prefix": "stlog",
     "body": [
-        "console.log(${1:'Hola mundo'});",
-        "$2"
+        "console.log('$1'$2);",
+        "$3"
     ],
     "description": "Mostrar el log"
 },
 "mostrar clase": {
-    "prefix": "clase",
+    "prefix": "stclase",
     "body": [
         "export class ${1:SuperHeroe} {",
         " ",
@@ -322,14 +322,14 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
     "description": "Mostrar clase"
 },
 "mostrar todo": {
-    "prefix": "todo",
+    "prefix": "sttodo",
     "body": [
         "// TODO: ",
     ],
     "description": "Mostrar Todo"
 },
 "mostrar fixme": {
-    "prefix": "fixme",
+    "prefix": "stfixme",
     "body": [
         "// FIXME: ",
     ],
