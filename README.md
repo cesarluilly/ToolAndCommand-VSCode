@@ -278,7 +278,8 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 "mostrar log": {
     "prefix": "stlog",
     "body": [
-        "console.log('$1'$2);",
+        "console.log($1$2);",
+        // "console.log('$1'$2);",
         "$3"
     ],
     "description": "Mostrar el log en la o consulta"
@@ -304,7 +305,8 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 "mostrar log": {
     "prefix": "stlog",
     "body": [
-        "console.log('$1'$2);",
+        "console.log($1$2);",
+        // "console.log('$1'$2);",
         "$3"
     ],
     "description": "Mostrar el log"
