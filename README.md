@@ -336,7 +336,23 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
         "// FIXME: ",
     ],
     "description": "Mostrar fixme"
-}
+},
+"desescructuracion objetos": {
+		"prefix": "stdesesobj",
+		"body": [
+			"const {$2} = $1;",
+			"$0"
+		],
+		"description": "Desescructuracion de objetos"
+	},
+	"desescructuracion arreglos": {
+		"prefix": "stdesesobj",
+		"body": [
+			"const [$2] = $1;",
+			"$0"
+		],
+		"description": "Desescructuracion de arreglos"
+	}
 ```
 
 ### TW C#
