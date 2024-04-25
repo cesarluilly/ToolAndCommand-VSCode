@@ -43,6 +43,9 @@
 |Extension|Plataformas|Configuracion|Descripcion
 |---|---|---|---|
 | [Color Picker Tools PRO](https://www.microsoft.com/store/productId/9P744VBBPXM1?ocid=pdpshare)|**`Colors CSS`**|""|""|  
+| [Microsoft Clipchamp](https://www.microsoft.com/store/productId/9P1J8S7CCWWT?ocid=pdpshare)|**`Grabar Pantalla`**|""|""|  
+| [Lightshot Captura de pantalla]()|**`Captura de pantalla`**|""|""|  
+
 
 ## Comandos y puntos pendientes a buscar.
 
