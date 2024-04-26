@@ -59,6 +59,7 @@
 
 ## Estensiones para Visual Studio
 https://www.youtube.com/watch?v=aLhwWwVQUCQ
+Snippets de C# predefinidos por Visual Studio https://learn.microsoft.com/es-es/visualstudio/ide/visual-csharp-code-snippets?view=vs-2022
 
 - Productivity Power Tools installation [03:30]
 - Align Assignments [12:00]: Aligns assignment statements by typing Ctrl+Alt+] 
