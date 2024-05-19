@@ -125,6 +125,11 @@ Los comandos tambien se pueden econtrar en la siguiente liga.
 
 [Comandos de Visual Studio 2022](https://docs.microsoft.com/es-es/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
 
+## Atajos de Server Management Studio (SSMS)
+| # | Comando | Descripcion | Comentario |
+|:---:|:---:|:---:|:---:|
+| 1 | Ctrl+Shift+R | Refrescar la caché de IntelliSense |
+
 
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
