@@ -252,6 +252,12 @@ Los comandos tambien se pueden econtrar en la siguiente liga.
 | 7 | Shift+F5| Stop |
 
 ### Comandos personalizados
+Abrir la configuración de atajos de teclado:
+
+* Abre Visual Studio Code.
+* Ve al menú File (Archivo) en Windows/Linux o Code en macOS.
+* Selecciona Preferences (Preferencias) y luego Keyboard Shortcuts (Atajos de teclado). También puedes usar el atajo de teclado Ctrl+K Ctrl+S para abrir esta configuración directamente.
+
 | # | Keybinding | Descripcion | Command | when |
 |:---:|:---:|:---:|:---:|:---:|
 | 1 | Ctrl+Shift+Ñ | Maximizar y minimizar la consola de comandos | "workbench.action.toggleMaximizedPanel" | terminalProcessSupported \|\| terminalWebExtensionContributedProfile |
