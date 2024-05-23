@@ -985,6 +985,7 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 ## Configuracion del modo Zen Preferido
 
 ![modoZen1](./imgReadme/configZen1.jpg)
+ChatGpt : Entiendo, en las versiones más recientes de Visual Studio Code, parece que zenMode.showTabs ya no acepta valores booleanos. En su lugar, acepta los valores "multiple", "single" y "none". Para replicar el comportamiento de ocultar siempre las pestañas en el modo Zen, debes usar el valor "none".
 ![modoZen2](./imgReadme/modoZen2.jpg)
 
 ## Configuracion de linea de margen (Rulers)
