@@ -127,6 +127,8 @@ Los comandos tambien se pueden econtrar en la siguiente liga.
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
 | 1 | Shift+F10 + L | Limpia la consola de Output |
+| 2 | Ctrl + M + O  | Colapsa todas las regiones en el archivo actual. |
+| 3 | Ctrl + M + P  | Expande todas las regiones en el archivo actual. |
 
 ## Atajos de Server Management Studio (SSMS)
 | # | Comando | Descripcion | Comentario |
