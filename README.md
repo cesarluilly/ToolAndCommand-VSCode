@@ -107,6 +107,28 @@ Algunas otras configuraciones recomendadas
 * dotnet run
 * dotnet watch run
 
+## Manejador de Versiones de Node - NVM
+Una alternativa cuando en nuestra lap tenemos varios proyectos en diferentes versiones
+
+* https://www.youtube.com/watch?v=Z-Ofqd2yBCc
+* https://github.com/coreybutler/nvm-windows/releases
+
+Nos proporciona diferentes herramientas faciles de usar para windows, entre ellas el instalador y el actualizador
+![1718201325042](image/README/1718201325042.png)
+
+Comandos mas utiles
+* nvm --help
+* nvm current
+* nvm use [version] [arch]
+* nvm install <version> [arch]
+* nvm list
+* nvm install lts
+* nvm install latest
+
+Para instalar yarn, es se hace sobre cada version de Node, es decir nos movemos a la version de node eh hacemos la instalacion de Yarn
+
+* npm install -g yarn
+
 ## Instalaciones necesarias para cubrir NodeJS de Udemy por Fernando Herrera.
 
 * [NodeJs](https://gist.github.com/Klerith/177c153db77e566cb763f79e65d248bf)
@@ -124,6 +146,7 @@ Algunas otras configuraciones recomendadas
 Los comandos tambien se pueden econtrar en la siguiente liga.
 
 [Comandos de Visual Studio 2022](https://docs.microsoft.com/es-es/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
+
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
 | 1 | Shift+F10 + L | Limpia la consola de Output |
