@@ -341,43 +341,51 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 ```
 ### Typescript
 ```
-"mostrar log": {
-    "prefix": "stlog",
-    "body": [
-        "console.log($1$2);",
-        // "console.log('$1'$2);",
-        "$3"
-    ],
-    "description": "Mostrar el log"
-},
-"mostrar clase": {
-    "prefix": "stclase",
-    "body": [
-        "export class ${1:SuperHeroe} {",
-        " ",
-        "\tconstructor() {",
-        "\t//\tholamundo$2",
-        "\t}",
-        "}"
-    ],
-    "description": "Mostrar clase"
-},
-"mostrar todo": {
-    "prefix": "sttodo",
-    "body": [
-        "// TODO: ",
-    ],
-    "description": "Mostrar Todo"
-},
-"mostrar fixme": {
-    "prefix": "stfixme",
-    "body": [
-        "// FIXME: ",
-    ],
-    "description": "Mostrar fixme"
-},
-"desescructuracion objetos": {
-		"prefix": "stdesesobj",
+
+	"mostrar log": {
+		"prefix": "stLog",
+		"body": [
+			"console.log($1$2);",
+			"$3"
+		],
+		"description": "Mostrar el log"
+	},
+	"mostrar clase": {
+		"prefix": "stClase",
+		"body": [
+			"export class ${1:SuperHeroe} {",
+			" ",
+			"\tconstructor() {",
+			"\t//\tholamundo$2",
+			"\t}",
+			"}"
+		],
+		"description": "Mostrar clase"
+	},
+	"mostrar todo": {
+		"prefix": "stTodo",
+		"body": [
+			"// TODO: ",
+		],
+		"description": "Mostrar Todo"
+	},
+	"mostrar fixme": {
+		"prefix": "stFixme",
+		"body": [
+			"// FIXME: ",
+		],
+		"description": "Mostrar fixme"
+	},
+	"Separador de ejemplos": {
+		"prefix": "stLogSeparador",
+		"body": [
+			"console.log(\"Example ${1:1}************************************\");",
+			"$0"
+		],
+		"description": "comments"
+	}, 
+	"desescructuracion objetos": {
+		"prefix": "stDesesObj",
 		"body": [
 			"const {$2} = $1;",
 			"$0"
@@ -385,13 +393,14 @@ Ir a File/Preference/User Snippets/"Seleccionamos el lenguaje"
 		"description": "Desescructuracion de objetos"
 	},
 	"desescructuracion arreglos": {
-		"prefix": "stdesesobj",
+		"prefix": "stDesesArr",
 		"body": [
 			"const [$2] = $1;",
 			"$0"
 		],
 		"description": "Desescructuracion de arreglos"
 	}
+
 ```
 
 ### TW C#
