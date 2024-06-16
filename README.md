@@ -117,17 +117,21 @@ Nos proporciona diferentes herramientas faciles de usar para windows, entre ella
 ![1718201325042](image/README/1718201325042.png)
 
 Comandos mas utiles
-* nvm --help
-* nvm current
-* nvm use [version] [arch]
-* nvm install <version> [arch]
-* nvm list
-* nvm install lts
-* nvm install latest
+* ``nvm --help``
+* ``nvm current``
+* ``nvm use [version] [arch]``
+* ``nvm install <version> [arch]``
+* ``nvm list``
+* ``nvm install lts``
+* ``nvm install latest``
 
-Para instalar yarn, es se hace sobre cada version de Node, es decir nos movemos a la version de node eh hacemos la instalacion de Yarn
+* Para instalar yarn, es se hace sobre cada version de Node, es decir nos movemos a la version de node eh hacemos la instalacion de Yarn
+    * ``npm install -g yarn``
+* Instalacion de Angular CLI se hace sobre cada version de Node instalado en nvm `Ojo, si tecleas **npm install -g @angular/cli** se intentara instala la ultima version por lo tanto puede que mande error, entonces se tiene que instalar en base a la version de Angular con la que vas a trabajar`
 
-* npm install -g yarn
+    * `npm install -g @angular/cli@16` para node 18
+* Para desintalar angular/cli
+    * ``npm uninstall -g @angular/cli``
 
 ## Instalaciones necesarias para cubrir NodeJS de Udemy por Fernando Herrera.
 
