@@ -27,7 +27,7 @@
 | [Bootstrap And CSS Autocomplete (mssql)]([https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense) | **`Bootstrap All Version and CSS`** | | |
 | [Path Intellisense]()|**`PENDING FOR DEFINE`**|""|""|  
 | [Prettier - Code formatter](https://www.youtube.com/watch?v=PZqHpcwIA-A)|**`CSS Autorelleno Intellisense`**|""|""|  
-| [CSS Peek](https://www.youtube.com/watch?v=PZqHpcwIA-A)|**`Visualizar de forma rapida el estilo de una clase en HTML`**|""|""|  
+| [CSS Peek](https://www.youtube.com/watch?v=PZqHpcwIA-A)|**`Visualizar de forma rapida el estilo de una clase en HTML`**|"Alt + F12 Muestra una pequeña pantalla de la clase de CSS"|""|  
 | [Angular Language Service]()|**`PENDING FOR DEFINE`**|""|""|  
 | [Image preview]()|**`PENDING FOR DEFINE`**|""|""|  
 | [TypeScript Importer]()|**`PENDING FOR DEFINE`**|""|""|  
