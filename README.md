@@ -26,12 +26,13 @@
 | [SQL Server (mssql)](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) | **`.Net Core`** | | |
 | [Bootstrap And CSS Autocomplete (mssql)]([https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql](https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense) | **`Bootstrap All Version and CSS`** | | |
 | [Path Intellisense]()|**`PENDING FOR DEFINE`**|""|""|  
-| [Prettier - Code formatter]()|**`PENDING FOR DEFINE`**|""|""|  
+| [Prettier - Code formatter](https://www.youtube.com/watch?v=PZqHpcwIA-A)|**`CSS Autorelleno Intellisense`**|""|""|  
+| [CSS Peek](https://www.youtube.com/watch?v=PZqHpcwIA-A)|**`Visualizar de forma rapida el estilo de una clase en HTML`**|""|""|  
 | [Angular Language Service]()|**`PENDING FOR DEFINE`**|""|""|  
 | [Image preview]()|**`PENDING FOR DEFINE`**|""|""|  
 | [TypeScript Importer]()|**`PENDING FOR DEFINE`**|""|""|  
 | [vscode-angular-html]()|**`PENDING FOR DEFINE`**|""|""|  
-| [IntelliSense for CSS class names in HTML]()|**`PENDING FOR DEFINE`**|""|""|  
+| [IntelliSense for CSS class names in HTML]()|**`Reconocimiento de las clases de CSS que tengo en algun fichero de CSS para ubicarlo mas rapido cuando lo establecamos en una etiqueta HTML`**|""|""|  
 | [Material Icon Theme]()|**`PENDING FOR DEFINE`**|""|""|  
 | [Gitlens -- Git supercharged]()|**`PENDING FOR DEFINE`**|""|""|  
 | [CodeSnap]()|**`PENDING FOR DEFINE`**|""|""|  
