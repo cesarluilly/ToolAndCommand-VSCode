@@ -14,7 +14,7 @@
 | [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) | **`All`** | "" | "" |
 | [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal) | **`All`** | "" | "" |
 | [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) | **`.Net Core`** | "" | "" |
-| [Liveserver](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) | **`NodeJs`, `HTML`, `CSS`, `JS`** | "" | "Para que se actulize nuestra pagina en automatico en el navegador, cada ves que guardamos un cambio en nuestro HTML o en JS, CSS Etc" |
+| [Liveserver](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) | **`NodeJs`, `HTML`, `CSS`, `JS`** | "" | "Para que se actulize nuestra pagina en automatico en el navegador, cada ves que guardamos un cambio en nuestro HTML o en JS, CSS Etc, para usarlo seria ---> Haz clic derecho en el editor del archivo y selecciona Open with Live Server." |
 | [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) | **`NodeJs`** | "" | "" |
 | [TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) | **`Not Defined`** | "" | "" |
 | [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) | **`Not Defined`** | "" | "" |
