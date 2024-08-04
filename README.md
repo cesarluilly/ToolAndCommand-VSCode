@@ -269,6 +269,7 @@ Los comandos tambien se pueden econtrar en la siguiente liga.
 | 7 | Ctrl+K P| Copiar ruta actual |
 | 8 | Ctrl+K R| Abrir el archivo actual en el finder o explorator |
 | 9 | Ctrl+K O| Abrir archivo actual en una nueva ventana o instancia |
+| 10 | Ctrl+K Ctrl+Shift+C| Copiar Ruta relativa de un folder, para eso el focus lo ponemos en el folder |
 
 ### Debugging
 | # | Comando | Descripcion | Comentario |
