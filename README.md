@@ -168,6 +168,7 @@ Los comandos tambien se pueden econtrar en la siguiente liga.
 ### Atajos Generales
 | # | Comando | Descripcion | Comentario |
 |:---:|:---:|:---:|:---:|
+| 0 | Estando en un dir en CMD, teclear `code .` | Abrir Visual Code |
 | 1 | Ctrl+K Ctrl+O | Abrir nueva instancia para trabajar |
 | 2 | Ctrl+Shift+P ó F1 | Mostrar paleta de comandos |
 | 3 | Ctrl+Shift+N | Nueva instancia de VSCode |
