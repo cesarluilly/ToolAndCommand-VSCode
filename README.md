@@ -240,6 +240,7 @@ Los comandos tambien se pueden econtrar en la siguiente liga.
 | 13 | Ctrl+Shift+Z ò Ctrl+Y | Recuperar los ultimos cambios revertidos |
 | 14 | F2 | Replace/Renombrar | Hay que tener mucho cuidado y ver que es lo que hace y como afecta a otros archivos. **Nota**: Los archivos que se ven modificados por es15 renombramiento, se abren en automatico en VSCode para despues verificar esos cambios | 
 | 16 | Ctrl+Shift+P "wrapt" | Encerrar un texto en etiqueta personalizada |
+| 17 | Alt + ← / → | Ir a la posicion siguiente o anterior del punteros donde me posicione en el codigo |
 
 ### Relacionados consulta de archivos o informacion
 | # | Comando | Descripcion | Comentario |
