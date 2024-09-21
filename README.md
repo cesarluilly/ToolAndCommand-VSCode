@@ -1108,7 +1108,7 @@ alguna razon y para eso hay que reiniciar el servicio.
 * ### **Shift + F2** -> Poner Play/Pause y enfocando en Chrome
 
 * Se necesita tener instalado [**AutoHotkey**](https://www.autohotkey.com/)
-* Correr el script `udemyPlayPause.ahk` con el siguiente contenido
+* Correr el script `udemyPlayPause.ahk` con el siguiente contenido (Nota. Si queremos dar por ``finalizado nuestro script`` una ves corrido, hay que ir al administrador de tareas y cerrar el proceso que lleve el nombre de `AutoHotkey`)
     * ![1726954105179](image/README/1726954105179.png)
     * ```ahk
         ; F2: Envía el comando y luego regresa al foco anterior
@@ -1153,6 +1153,8 @@ alguna razon y para eso hay que reiniciar el servicio.
         return
         
     ```
+* **Nota. Para que funcione, primero hay que poner play en el video con el mouse, y ya despues nos dejara utilizar las teclas que configuramos para Play/Pause**
+
 * En cada video de Udemy pegar el siguiente script en la consola **NOTA: SE PRETENDE CREAR UNA EXTENCION DE GOOGLE PARA TENERLO SIEMPRE DISPONIBLE** pero por cuestiones de tiempo no me dio tiempo realizarlo.
 
 ```js
