@@ -1107,7 +1107,7 @@ alguna razon y para eso hay que reiniciar el servicio.
 * ### **F2** -> Poner Play/Pause sin desenfocar
 * ### **Shift + F2** -> Poner Play/Pause y enfocando en Chrome
 
-* Se necesita tener instalado **AutoHotkey**
+* Se necesita tener instalado [**AutoHotkey**](https://www.autohotkey.com/)
 * Correr el script `udemyPlayPause.ahk` con el siguiente contenido
     * ![1726954105179](image/README/1726954105179.png)
     * ```ahk
