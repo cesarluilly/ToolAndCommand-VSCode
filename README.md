@@ -48,6 +48,11 @@
 | [Lightshot Captura de pantalla]()|**`Captura de pantalla`**|""|""|  
 | [IDM Gestor de Descargas](https://www.internetdownloadmanager.com/)|**`Gestor de Descargas para eficientar la descarga de videos y archivos pesados`**|""|""|  
 
+## Herramientas super utiles para tener instalados.
+
+* greepWin 
+    * Ayuda a buscar rapidamente archivos y tiene incluso capacidad para buscar dentro de un archivo plano
+        * ![1739489446273](image/README/1739489446273.png)
 
 ## Comandos y puntos pendientes a buscar.
 
