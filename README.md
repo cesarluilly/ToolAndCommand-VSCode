@@ -53,6 +53,8 @@
 * greepWin 
     * Ayuda a buscar rapidamente archivos y tiene incluso capacidad para buscar dentro de un archivo plano
         * ![1739489446273](image/README/1739489446273.png)
+* Consola Warp
+	* https://app.warp.dev/logged_in/download?referral=true	 
 
 ## Comandos y puntos pendientes a buscar.
 
