@@ -36,7 +36,12 @@
 | [Material Icon Theme]()|**`PENDING FOR DEFINE`**|""|""|  
 | [Gitlens -- Git supercharged]()|**`PENDING FOR DEFINE`**|""|""|  
 | [CodeSnap]()|**`PENDING FOR DEFINE`**|""|""|  
-| []()|**`PENDING FOR DEFINE`**|""|""|  
+| [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)|**`PENDING FOR DEFINE`**|""|""|  
+| [Yaml](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) | **`Azure DevOps`** | "" | "" |
+| [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) | **`Azure DevOps`** | "" | "" |
+| []() | **`Azure DevOps`** | "" | "" |
+
+
 
 
 ## Software de ayuda para programar
