@@ -145,6 +145,84 @@ Comandos mas utiles
     * `npm install -g @angular/cli@16` para node 18
 * Para desintalar angular/cli
     * ``npm uninstall -g @angular/cli``
+ 
+# 📌 Comandos de Git Más Utilizados 🚀
+
+## 🔥 **Comandos Esenciales**
+| Comando | Descripción |
+|---------|------------|
+| `git init` | Inicializa un nuevo repositorio Git en un directorio. |
+| `git clone <url>` | Clona un repositorio remoto en tu máquina. |
+| `git status` | Muestra el estado actual del repositorio (archivos modificados, en staging, etc.). |
+| `git add <archivo>` | Agrega un archivo específico al área de staging. |
+| `git add .` | Agrega todos los archivos modificados al área de staging. |
+| `git commit -m "Mensaje"` | Confirma los cambios en el historial con un mensaje descriptivo. |
+| `git push origin <rama>` | Envía los cambios al repositorio remoto en la rama especificada. |
+| `git pull origin <rama>` | Descarga y fusiona los cambios del repositorio remoto en la rama actual. |
+
+---
+
+## 🔀 **Trabajo con Ramas**
+| Comando | Descripción |
+|---------|------------|
+| `git branch` | Lista todas las ramas locales. |
+| `git branch <nombre>` | Crea una nueva rama. |
+| `git checkout <rama>` | Cambia a otra rama. |
+| `git checkout -b <rama>` | Crea y cambia a una nueva rama. |
+| `git merge <rama>` | Fusiona una rama en la actual. |
+| `git branch -d <rama>` | Elimina una rama local. |
+| `git push origin --delete <rama>` | Elimina una rama remota. |
+
+---
+
+## 🕵️‍♂️ **Historial y Revisión de Cambios**
+| Comando | Descripción |
+|---------|------------|
+| `git log --oneline --graph` | Muestra el historial de commits en formato corto y con estructura gráfica. |
+| `git diff` | Muestra las diferencias entre el código modificado y el último commit. |
+| `git blame <archivo>` | Muestra quién modificó cada línea de un archivo y en qué commit. |
+| `git show <commit>` | Muestra detalles de un commit específico. |
+
+---
+
+## 🚨 **Deshacer y Restaurar Cambios**
+| Comando | Descripción |
+|---------|------------|
+| `git reset --soft <commit>` | Revierte commits, pero mantiene los cambios en staging. |
+| `git reset --hard <commit>` | Revierte commits y borra los cambios por completo. ⚠️ PELIGROSO |
+| `git revert <commit>` | Crea un nuevo commit que revierte los cambios de un commit anterior. |
+| `git restore <archivo>` | Deshace los cambios en un archivo que aún no ha sido añadido al staging. |
+| `git stash` | Guarda temporalmente los cambios sin confirmarlos. |
+| `git stash pop` | Restaura los cambios guardados con `stash`. |
+
+---
+
+## 🏗️ **Trabajo con Remotos**
+| Comando | Descripción |
+|---------|------------|
+| `git remote -v` | Muestra las URLs de los repositorios remotos configurados. |
+| `git remote add origin <url>` | Agrega un repositorio remoto. |
+| `git fetch origin` | Descarga los cambios del repositorio remoto sin fusionarlos. |
+| `git pull origin <rama>` | Descarga y fusiona los cambios remotos con la rama actual. |
+| `git push -u origin <rama>` | Sube los cambios y establece la rama remota como tracking. |
+
+---
+
+## 🔧 **Configuraciones y Alias Útiles**
+| Comando | Descripción |
+|---------|------------|
+| `git config --global user.name "Tu Nombre"` | Configura tu nombre de usuario en Git. |
+| `git config --global user.email "tuemail@example.com"` | Configura tu correo en Git. |
+| `git config --list` | Muestra la configuración actual de Git. |
+| `git alias.st "status"` | Crea un alias (`git st` en lugar de `git status`). |
+
+---
+
+### 💡 **Consejo**
+Si quieres usar Git de forma más eficiente, puedes combinar comandos con **flags** como `--amend`, `--force`, `--all` y `--interactive` para personalizar el comportamiento.
+
+---
+
 
 ## Instalaciones necesarias para cubrir NodeJS de Udemy por Fernando Herrera.
 
