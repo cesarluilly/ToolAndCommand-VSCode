@@ -54,6 +54,11 @@
 | [IDM Gestor de Descargas](https://www.internetdownloadmanager.com/)|**`Gestor de Descargas para eficientar la descarga de videos y archivos pesados`**|""|""|  
 | [FileZilla](https://filezilla-project.org/)|**`Transferencia de archivos entre compu local y un servidor remoto`**|""|""|  
 | [Bizagi](https://www.bizagi.com/es/plataforma/modeler)|**`Modelado de casos de uso, flujos`**|""|""|  
+| [Plantuml](https://plantuml.com/es/)|**`Modelando diagramas de casos`**|""|""|  
+| [Plantuml](https://plantuml.com/es/sequence-diagram)|**`Secuencia de sintaxis Plantuml`**|""|""|  
+| []()|**``**|""|""|  
+| []()|**``**|""|""|  
+| []()|**``**|""|""|  
 
 
 
