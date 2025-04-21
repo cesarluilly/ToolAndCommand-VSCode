@@ -56,7 +56,7 @@
 | [Bizagi](https://www.bizagi.com/es/plataforma/modeler)|**`Modelado de casos de uso, flujos`**|""|""|  
 | [Plantuml](https://plantuml.com/es/)|**`Modelando diagramas de casos`**|""|""|  
 | [Plantuml](https://plantuml.com/es/sequence-diagram)|**`Secuencia de sintaxis Plantuml`**|""|""|  
-| []()|**``**|""|""|  
+| [Diagramar UML](https://www.plantuml.com/plantuml)|**`Online realizar diagramas`**|""|""|  
 | []()|**``**|""|""|  
 | []()|**``**|""|""|  
 
