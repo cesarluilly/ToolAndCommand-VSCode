@@ -1298,3 +1298,81 @@ videoElement.addEventListener('pause', function() {
 });
 
 ```
+
+# Combinacion de teclas para movernos de forma rapida
+
+Correr con AutoHotkey el archivo  ``NuevaCombinacionTeclasMovimiento.ahk``
+
+### Qué hace este script
+
+Convierte **CapsLock** en una tecla “Fn” para moverte y editar texto **sin usar las flechas** y sin mover la mano.
+
+Mientras  **mantienes CapsLock presionado** , el teclado queda en “modo navegación”:
+
+* **Solo funcionan las combinaciones que definiste**
+* **Todo lo demás queda bloqueado** (para que no se tecleen letras por accidente)
+* **Shift sí funciona** para seleccionar texto
+* La tecla de **Backspace** y **Delete** no estan bloqueadas
+
+---
+
+### Combinaciones que tienes configuradas
+
+#### Mover el cursor (como flechas)
+
+* **CapsLock + j** → Izquierda (←)
+* **CapsLock + k** → Abajo (↓)
+* **CapsLock + i** → Arriba (↑)
+* **CapsLock + l** → Derecha (→)
+
+#### Mover por palabra
+
+* **CapsLock + h** → Palabra a la izquierda (Ctrl + ←)
+* **CapsLock + Ñ** → Palabra a la derecha (Ctrl + →)
+
+#### Ir al inicio o fin de la línea
+
+* **CapsLock + u** → Inicio de línea (Home)
+* **CapsLock + o** → Fin de línea (End)
+
+#### Subir / bajar por página
+
+* **CapsLock + 8** → Page Up
+* **CapsLock + ,** → Page Down
+
+#### Borrar
+
+* **CapsLock + m** → Borrar hacia atrás (Backspace)
+* **CapsLock + .** → Borrar hacia adelante (Delete)
+
+---
+
+### Seleccionar texto (con Shift)
+
+Como  **Shift no está bloqueado** , puedes seleccionar así:
+
+* **Shift + CapsLock + j/k/i/l** → selecciona moviéndote
+* **Shift + CapsLock + h/Ñ** → selecciona por palabras
+* **Shift + CapsLock + u/o** → selecciona hasta inicio/fin de línea
+
+---
+
+### Bloqueo de teclas (seguridad)
+
+Cuando mantienes  **CapsLock presionado** , el script bloquea:
+
+* letras
+* números
+* símbolos
+* teclas especiales
+
+**Excepto** las teclas que usas en tus combinaciones (j, k, i, l, h, Ñ, u, o, 8, coma, m, punto).
+
+---
+
+#### Cómo aplicar cambios
+
+Si editas el archivo:
+
+1. Busca el icono verde “H” de AutoHotkey en la bandeja (junto al reloj)
+2. Clic derecho → **Reload Script**
