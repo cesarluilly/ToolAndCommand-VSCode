@@ -71,7 +71,7 @@ CapsLock & .::Send "{Blind}{Delete}"
 *9::return
 
 ; ---- Teclas comunes bloqueadas ----
-*Space::return
+; *Space::return ;no bloqueado
 *Tab::return
 *Enter::return
 *Esc::return
