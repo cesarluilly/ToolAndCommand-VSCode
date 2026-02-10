@@ -57,7 +57,7 @@
 | [Plantuml](https://plantuml.com/es/)|**`Modelando diagramas de casos`**|""|""|  
 | [Plantuml](https://plantuml.com/es/sequence-diagram)|**`Secuencia de sintaxis Plantuml`**|""|""|  
 | [Diagramar UML](https://www.plantuml.com/plantuml)|**`Online realizar diagramas`**|""|""|  
-| []()|**``**|""|""|  
+| [Dbeaver](https://dbeaver.io/download/)|**`DBeaver`**|""|"De ayuda en el analisis de tablas y sus relaciones para tener un contexto mas rapido de la info que guarda una DB"|  
 | []()|**``**|""|""|  
 
 
