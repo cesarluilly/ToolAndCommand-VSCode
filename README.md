@@ -1205,3 +1205,5 @@ alguna razon y para eso hay que reiniciar el servicio.
 
 ``Ir al folder AutoHotKey`` ahi se encontrara un readme llamado ``readme_ConfiguracionTeclas.md`` donde se encontrara un resumen
 
+# VIM 
+[Liga de Atajos Vim Dentro de este directorio]('./planVIM.md')
