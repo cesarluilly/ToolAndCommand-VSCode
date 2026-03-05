@@ -1207,3 +1207,19 @@ alguna razon y para eso hay que reiniciar el servicio.
 
 # VIM 
 [Liga de Atajos Vim Dentro de este directorio]('./planVIM.md')
+
+# Fathom Extraer Informacion
+
+#### Extraer informacion de cursos
+
+Extrae:
+Puntos Importantes
+Teoría clave y beneficios
+Tips, mejores prácticas
+Glosario
+Experiencia para mejorar la eficiencia
+
+Investigame
+
+* Ejemplos de cada uno de los puntos importantes
+* Experiencia para ser mas eficiente en el desarrollo con las herramientas que se utiliza
