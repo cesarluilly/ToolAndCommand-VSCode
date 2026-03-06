@@ -1225,3 +1225,15 @@ Investigame
 * Ejemplos de cada uno de los puntos importantes
 * Experiencia para ser mas eficiente en el desarrollo con las herramientas que se utiliza
 ```
+
+# Replicar notificaciones en Android 
+
+Algunas Apps como Google Task las notificaciones no funcionan bien para que lleguen a Redmi Watch 5, por lo que esta app es una solucion para replicar notificacion y llegue al Reloj
+
+En Play Store buscar [Macrodroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) e instalar
+
+* Crear una Macro 
+    * Configurar el Disparador
+    * Configurar el action(Lanzamiento de notificacion) 
+    * Guardar
+
