@@ -1213,6 +1213,7 @@ alguna razon y para eso hay que reiniciar el servicio.
 
 ## Extraer informacion de cursos
 
+**Prompt 1**
 ```js
 Extrae:
 * Puntos Importantes 
@@ -1224,6 +1225,22 @@ Extrae:
 Investigame
 * Ejemplos de cada uno de los puntos importantes
 * Experiencia para ser mas eficiente en el desarrollo con las herramientas que se utiliza
+```
+
+**Prompt 2**
+```js
+Solo enfocate en el curso de Udemy del instructor de Angular cuyo tema es: []
+
+Extraer:
+* Proposito de la reunion
+* Glosario
+* Atajos de teclado
+* Buenas prácticas, recomendaciones y consejos
+
+Dame el ejemplo de base 
+
+Investigame
+* Ejemplos de cada uno de los puntos importantes
 ```
 
 # Replicar notificaciones en Android 
