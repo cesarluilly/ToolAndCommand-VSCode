@@ -1243,6 +1243,9 @@ Investigame
 * Ejemplos de cada uno de los puntos importantes
 ```
 
+**Formateo de respuesta**
+Despues de cada respuesta solicitar que le de formato "Dale formato"
+
 # Replicar notificaciones en Android 
 
 Algunas Apps como Google Task las notificaciones no funcionan bien para que lleguen a Redmi Watch 5, por lo que esta app es una solucion para replicar notificacion y llegue al Reloj
