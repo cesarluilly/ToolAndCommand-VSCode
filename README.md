@@ -1213,6 +1213,8 @@ alguna razon y para eso hay que reiniciar el servicio.
 
 ## Extraer informacion de cursos
 
+Para una respuesta mas acertada, solo tener el video en grabacion con Fathom
+
 **Prompt 1**
 ```js
 Extrae:
