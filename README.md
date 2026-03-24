@@ -1279,7 +1279,7 @@ Investigame
 Las preguntas separadas para una mejor respuesta
 1.-
 ```
-Solo enfocate en el curso de Udemy del instructor de Angular
+Solo enfocate en el curso de Udemy del instructor de Angular cuyo tema es: []
 
 Extraer lo siguiente:
     * Proposito de la reunion
