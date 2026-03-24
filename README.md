@@ -1275,6 +1275,28 @@ Dame el ejemplo de base
 Investigame
 * Ejemplos de cada uno de los puntos importantes
 ```
+**Prompt 3**
+Las preguntas separadas para una mejor respuesta
+1.-
+```
+Solo enfocate en el curso de Udemy del instructor de Angular
+
+Extraer lo siguiente:
+    * Proposito de la reunion
+    * Glosario
+    * Atajos de teclado
+    * Buenas prácticas, recomendaciones y consejos
+```
+
+2.-
+```
+Dame el ejemplo de base 
+```
+
+3.-
+```
+Investigame ejemplos de cada uno de los puntos importantes
+```
 
 **Formateo de respuesta**
 Despues de cada respuesta solicitar que le de formato "Dale formato"
