@@ -1276,7 +1276,9 @@ Investigame
 * Ejemplos de cada uno de los puntos importantes
 ```
 **Prompt 3**
+
 Las preguntas separadas para una mejor respuesta
+
 1.-
 ```
 Solo enfocate en el curso de Udemy del instructor de Angular cuyo tema es: []
