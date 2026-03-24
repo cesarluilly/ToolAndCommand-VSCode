@@ -154,6 +154,37 @@ Comandos mas utiles
     * `npm install -g @angular/cli@16` para node 18
 * Para desintalar angular/cli
     * ``npm uninstall -g @angular/cli``
+
+# Pasos para cambiar a la versión de Node abrir un proyecto en una version diferente de Node a la instalada
+
+### 1. Cambiar la version de Node
+
+```cmd
+nvm install 20.10.0
+nvm use 20.10.0
+node -v
+npm -v
+```
+
+### 2. Limpiar instalaciones globales
+
+Esto solo limpia herramientas globales para evitar conflictos:
+
+```cmd
+npm uninstall -g @angular/cli typescript
+npm cache clean --force
+npm install -g @angular/cli
+ng version
+```
+
+### 3. Limpiar el proyecto actual
+
+```cmd
+eliminar node_modules
+eliminar package-lock.json
+
+Porque si no los borras, puedes seguir arrastrando dependencias instaladas con otra versión de Node.
+```
  
 # 📌 Comandos de Git Más Utilizados 🚀
 
