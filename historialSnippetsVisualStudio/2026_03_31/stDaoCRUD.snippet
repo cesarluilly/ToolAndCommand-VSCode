@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stDaoCRUD</Title>
+			<Shortcut>stDaoCRUD</Shortcut>
+			<Description>Code snippet for Dao Crud</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>entityClassName</Default>
+					<ToolTip>entityClassName</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>prefixEntityName</Default>
+					<ToolTip>prefixEntityName</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>3</ID>
+					<Default>tableName</Default>
+					<ToolTip>tableName</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>4</ID>
+					<Default>daoClassName</Default>
+					<ToolTip>daoClassName</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//--------------------------------------------------------------------------------------------------------------
+			//                                                  //This is a Data Access Object (DAO)
+
+			//-------------------------------------------------------------------------------------------------------------
+			//                                                  //TRANSFORMATION METHODS.
+
+			//-------------------------------------------------------------------------------------------------------------
+			public static void subAdd(
+				//                                              //Create a new record in the DB
+
+				$1$ $2$_I,
+				Odyssey2Context context_M
+				)
+			{
+				context_M.$3$.Add($2$_I);
+			}
+
+			//--------------------------------------------------------------------------------------------------------------
+			public static $1$ $2$Add(
+				//                                              //Create a new record in the DB.
+
+				//int intColumnName,
+				//int intColumnName,
+				// Complete all columns and assig to the next object entity.
+				Odyssey2Context context_M
+				)
+			{
+				$1$ $2$ = new $1$ {
+					
+				};
+				
+				context_M.$3$.Add($2$);
+				return $2$;
+			}
+
+			//-------------------------------------------------------------------------------------------------------------
+			public static void subUpdate(
+				//                                              //Update a record in the DB
+
+				$1$ $2$_I,
+				Odyssey2Context context_M
+				)
+			{
+				context_M.$3$.Update($2$_I);
+			}
+
+			//-------------------------------------------------------------------------------------------------------------
+			public static void subDelete(
+				//                                              //Delete a record in the DB
+
+				int intPk_I,
+				Odyssey2Context context_M
+				)
+			{
+				$1$ $2$ = 
+					$4$.$2$Get(intPk_I,
+					context_M);
+
+				context_M.$3$.Remove($2$);
+			}
+
+			//-------------------------------------------------------------------------------------------------------------
+			//                                                  //ACCESS METHODS.
+
+
+			//-------------------------------------------------------------------------------------------------------------
+			public static $1$ $2$Get(
+				//                                              //Get a record from the DB
+
+				int intPk_I,
+				Odyssey2Context context_I
+				)
+			{
+				return context_I.$3$.Find(intPk_I);
+			}
+
+			//-------------------------------------------------------------------------------------------------------------
+			public static bool boolIsValidPk(
+				//                                              //Verify if the PkExist.
+
+				int intPk_I,
+				Odyssey2Context context_I
+				)
+			{
+				return context_I.$3$.Find(intPk_I).IsNotNull();
+			}
+
+			//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+			public static void subValidate$2$(
+				//                                              //Validate the $2$.
+
+				int intPk$2$,
+				Odyssey2Context context_I,
+				ref int intStatus_IO,
+				ref String strUserMessage_IO,
+				ref String strDevMessage_IO
+				)
+			{
+				if (
+					//                                          //All before is Ok.
+					intStatus_IO == 200
+					)
+				{
+					if (
+						//
+						!$4$.boolIsValidPk(intPk$2$, context_I)
+						)
+					{
+						intStatus_IO = 400;
+						strUserMessage_IO = "Something Wrong.";
+						strDevMessage_IO = "$2$ not exist.";                    
+					}
+				}
+			}
+			$selected$ $end$ ]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

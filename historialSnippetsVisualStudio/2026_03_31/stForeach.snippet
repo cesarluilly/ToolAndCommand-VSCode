@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stForeach</Title>
+			<Shortcut>stForeach</Shortcut>
+			<Description>Code snippet for foreach standart</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>var</ID>
+					<Default>var</Default>
+					<ToolTip>Variable</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>item</ID>
+					<Default>item</Default>
+					<ToolTip>Name var</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>collection</ID>
+					<Default>collection</Default>
+					<ToolTip>Collection</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>ident</ID>
+					<Default> </Default>
+					<ToolTip>Identar comments</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//  $ident$//Take each $item$
+            foreach ($var$ $item$ in $collection$)
+            {
+				$selected$ $end$
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stStatusInfo2</Title>
+			<Shortcut>stStatusInfo2</Shortcut>
+			<Description>Code snippet for Status  2</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>estado</Default>
+					<ToolTip>obj status</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>false</Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>3</ID>
+					<Default>Sistema.MENSAJE_ERROR</Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>4</ID>
+					<Default>Datos no validos</Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>5</ID>
+					<Default>return estado.IsSuccess;</Default>
+					<ToolTip></ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[$1$.IsSuccess = $2$;
+			$1$.UserMessage = $3$;
+			$1$.DevMessage = "$4$";
+			$5$$selected$ $end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

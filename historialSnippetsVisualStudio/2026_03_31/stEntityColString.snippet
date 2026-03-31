@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stEntityColString</Title>
+			<Shortcut>stEntityColString</Shortcut>
+			<Description>Code snippet for Entity Col String</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Required</ID>
+					<Default>[Required]</Default>
+					<ToolTip>Requiered</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<Default>name</Default>
+					<ToolTip>Name</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>longitud</ID>
+					<Default>100</Default>
+					<ToolTip>Name</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[$Required$
+			[Column("$name$", TypeName = "nvarchar($longitud$)")]
+			public String str$name$ { get; set; }
+			$selected$ $end$			
+			]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

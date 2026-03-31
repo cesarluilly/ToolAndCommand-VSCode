@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stPostServiceMethod</Title>
+			<Shortcut>stPostServiceMethod</Shortcut>
+			<Description>Code snippet for Post Service</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>Post</Default>
+					<ToolTip>Post</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>NameService</Default>
+					<ToolTip>NameService</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>3</ID>
+					<Default>Purpose</Default>
+					<ToolTip>Purpose</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>4</ID>
+					<Default>Controller</Default>
+					<ToolTip>Controller</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>5</ID>
+					<Default></Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>6</ID>
+					<Default>[FromBody] </Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>7</ID>
+					<Default>ClassReceiveData</Default>
+					<ToolTip>ClassReceiveData</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>8</ID>
+					<Default>nameInstance</Default>
+					<ToolTip>nameInstance</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>9</ID>
+					<Default>NameClassSupport</Default>
+					<ToolTip>NameClassSupport</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>10</ID>
+					<Default>obj = </Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>11</ID>
+					<Default>int</Default>
+					<ToolTip>Return type</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>12</ID>
+					<Default>int</Default>
+					<ToolTip>Resturn type</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>13</ID>
+					<Default>intReturn</Default>
+					<ToolTip>Name var return</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>14</ID>
+					<Default> = </Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>15</ID>
+					<Default>null;</Default>
+					<ToolTip></ToolTip>
+				</Literal>
+				<Literal>
+					<ID>16</ID>
+					<Default>using var dbContextTransaction = context.Database.BeginTransaction();</Default>
+					<ToolTip>Init transaction</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>17</ID>
+					<Default>dbContextTransaction.Commit();</Default>
+					<ToolTip>Commit transaction</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>18</ID>
+					<Default>dbContextTransaction.Rollback();</Default>
+					<ToolTip>Rollback transaction</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[//------------------------------------------------------------------------------------------------------------------
+			[Http$1$("[action]")]
+			public IActionResult $2$(
+			    //                                              //PURPOSE:
+			    //                                              //$3$.
+			
+			    //                                              //URL: http://localhost/Odyssey2/$4$
+			    //                                              //      /$2$
+			    //                                              //Method: $1$.
+			
+			    //                                              //Use a JSON like this: visit the class.
+			
+			    //                                               //DESCRIPTION:
+			    //                                               //$5$.
+			
+			    //                                               //RETURNS:
+			    //                                               //      200 - Ok
+			
+			    //                                               //Receives JSON Class with data.
+			    $6$$7$ $8$
+			    )
+			{
+			    StStatus st = StStatus.stGetInitial();
+			    Object obj = null;
+			
+			    if (
+			        //                                          //Validate the data of the model.
+			        ModelState.IsValid
+			        )
+			    {
+			        //                              			//Get the printshop id from token.
+					var idClaim = User.Claims.FirstOrDefault(c => c.Type == "strPrintshopId");
+					String strPrintshopId = idClaim.Value;
+
+					$10$
+					$9$.sub$2$($8$, strPrintshopId, st);
+			    }
+			
+			    IActionResult aresult = Ok(new Respjson1ResponceJson1(st, obj));
+			
+			    return aresult;
+			}
+			$selected$ $end$
+			//--------------------------------------------------------------------------------------------------------------
+			public static $11$ $9$.sub$2$(
+			    //                                              //Support method of the service
+			
+			    $7$ $8$_I,
+			    String strPrintshopId_I,
+			    StStatus st_I
+			    )
+			{
+				$12$ $13$$14$$15$
+				using Odyssey2Context context = new Odyssey2Context();
+				$16$
+
+				try
+				{
+					PsPrintShop ps = PsPrintShop.psGetByPrintshopId(strPrintshopId_I);
+
+					if (
+						$9$.boolIsValid$2$Data($8$_I, ps, context, 
+							st_I)
+						)
+					{
+						$13$$14$
+						$9$.subDoTask$2$($8$_I, ps, context);
+						$17$	
+					}
+				}
+				catch (Exception ex)
+				{
+					$18$
+					Tools.subExceptionHandler(ex, st_I);
+				}
+
+				return $13$;
+			}
+			
+			//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+			private static bool $9$.boolIsValid$2$Data(
+			    //                                              //Method that valid data that is received of the service.
+			
+			    $7$ $8$_I,
+				PsPrintShop ps_I,
+			    Odyssey2Context context_I,
+			    StStatus st_I
+			    )
+			{
+			    st_I.subSetOk();
+			    
+			    
+			    
+			    return st_I.boolStatusOk;
+			}
+			
+			//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+			public static $11$ $9$.subDoTask$2$(
+				//                                              //Method that do task of the service.
+				
+			    $7$ $8$_I,
+			    PsPrintShop ps_I,
+			    Odyssey2Context context_I
+			    )
+			{
+			    $12$ $13$$14$$15$
+
+				return $13$;
+			}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stKeyvalue</Title>
+			<Shortcut>stKeyvalue</Shortcut>
+			<Description>Code snippet for Key value</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>ident</ID>
+					<Default></Default>
+					<ToolTip>Ident</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>keyType</ID>
+					<Default>keyType</Default>
+					<ToolTip>Key Type</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>valueType</ID>
+					<Default>valueType</Default>
+					<ToolTip>Value Type</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<Default></Default>
+					<ToolTip>Name</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>dictionary</ID>
+					<Default>dictionary</Default>
+					<ToolTip>Dictionary name</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>intI</ID>
+					<Default>intI</Default>
+					<ToolTip>Get element at index</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[// $ident$//Get item from dictionary
+			KeyValuePair<$keyType$}, $valueType$> keyvalue$name$ = $dictionary$.ElementAt($intI$);
+			$selected$ $end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

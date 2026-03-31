@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>stEntityColForeingKeyRequired</Title>
+			<Shortcut>stEntityColForeingKeyRequired</Shortcut>
+			<Description>Code snippet for key foreing</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>1</ID>
+					<Default>colName</Default>
+					<ToolTip>Column name</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>2</ID>
+					<Default>FileEntityDB</Default>
+					<ToolTip>File Entity DB</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[[Required]
+			[Column("Pk$1$", TypeName = "int")]
+			public int intPk$1$ { get; set; }
+			[ForeignKey("intPk$1$")]
+			public $2$ Pk$1$ { get; set; }
+			$selected$ $end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
